@@ -1,11 +1,17 @@
-# Redwood
->**HEADS UP:** RedwoodJS is _NOT_ ready for use in Production. It relies heavily on Prisma2, which is currently in testing with an expected production release coming soon. See status at ["Is Prisma2 Ready?"](https://isprisma2ready.com)
+# Redwood Tutorial Testing Repo
+Final state of Tutorial code running on latest release version.
+
+This is where the testing happens.
+
+### Deployed on Netlify
+https://jovial-bohr-4ac134.netlify.com/
+
 
 ## Getting Started
 - [Redwoodjs.com](https://redwoodjs.com): home to all things RedwoodJS.
 - [Tutorial](https://redwoodjs.com/tutorial/welcome-to-redwood): getting started and complete overview guide.
 - [Docs](https://redwoodjs.com/docs/introduction): using the Redwood Router, handling assets and files, list of command-line tools, and more.
-- [Redwood Community](https://community.redwoodjs.com): get help, share tips and tricks, and collaborate on everything about RedwoodJS.   
+- [Redwood Community](https://community.redwoodjs.com): get help, share tips and tricks, and collaborate on everything about RedwoodJS.
 
 ### Setup
 
