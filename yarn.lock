@@ -1572,10 +1572,10 @@
     lodash.omitby "^4.6.0"
     merge-graphql-schemas "^1.7.6"
 
-"@redwoodjs/cli@^0.4.0-rc.1":
-  version "0.4.0-rc.1"
-  resolved "https://registry.yarnpkg.com/@redwoodjs/cli/-/cli-0.4.0-rc.1.tgz#cf9c32162166ff942392b1de9af4845ec56d721f"
-  integrity sha512-eWKXzH/S/qkH5tGMZKF4TW7a06n9ZL3FkhRUqULO58YRiwuL/7Uan0NTL1Izixl0oUBNnvsDCFh2ownYqb3b9w==
+"@redwoodjs/cli@^0.4.0-rc.2":
+  version "0.4.0-rc.2"
+  resolved "https://registry.yarnpkg.com/@redwoodjs/cli/-/cli-0.4.0-rc.2.tgz#3d81283655669f392d66c4e26194270e55e15566"
+  integrity sha512-+Bg/VDV1YgUZiOrvwnny0Ka09Djl3oc5KKi4m6Lo2UP8wJXaz+7J9QoM1QhtBxEhtF56HHvqz8Q5Nl4J2cH1lA==
   dependencies:
     "@prisma/sdk" "^2.0.0-preview025"
     "@redwoodjs/internal" "^0.4.0-rc.1"
@@ -1595,10 +1595,10 @@
     prettier "^2.0.2"
     yargs "^15.3.1"
 
-"@redwoodjs/core@^0.4.0-rc.1":
-  version "0.4.0-rc.1"
-  resolved "https://registry.yarnpkg.com/@redwoodjs/core/-/core-0.4.0-rc.1.tgz#c66f03fd8b3ad4c80b101fc0964fd32286f89ef6"
-  integrity sha512-5kHT+jZb1aQyf7UL7Um2uI8q08ltWTWvywhqZXY1r3XFEIXRe9KE1ZypMANatDjzz2KN85yIPoFQnYi/hbhBMg==
+"@redwoodjs/core@^0.4.0-rc.2":
+  version "0.4.0-rc.2"
+  resolved "https://registry.yarnpkg.com/@redwoodjs/core/-/core-0.4.0-rc.2.tgz#0337a0c9b91730873ae1c9eddb644039a1761b6c"
+  integrity sha512-F0XtFYECld+A7m91SkGsXkuPwmuc9Rkt+xo+WpsSKXX52vrOVc+prq0rF/QJWtJiEF6yRrWTbvLhEc7i8Df1ww==
   dependencies:
     "@babel/cli" "^7.8.4"
     "@babel/core" "^7.9.0"
@@ -1610,7 +1610,7 @@
     "@babel/preset-typescript" "^7.9.0"
     "@babel/runtime-corejs3" "^7.9.2"
     "@prisma/cli" "2.0.0-preview025"
-    "@redwoodjs/cli" "^0.4.0-rc.1"
+    "@redwoodjs/cli" "^0.4.0-rc.2"
     "@redwoodjs/dev-server" "^0.4.0-rc.1"
     "@redwoodjs/eslint-config" "^0.4.0-rc.1"
     "@redwoodjs/internal" "^0.4.0-rc.1"
