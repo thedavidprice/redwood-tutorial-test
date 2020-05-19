@@ -17,6 +17,6 @@
     "yarn": ">=1.15"
   },
   "dependencies": {
-    "netlify-plugin-prisma-provider": "^0.1.1"
+    "netlify-plugin-prisma-provider": "^0.3.0"
   }
 }
