@@ -7,6 +7,7 @@ import FatalErrorPage from 'src/pages/FatalErrorPage'
 import Routes from 'src/Routes'
 
 import './scaffold.css'
+import './scaffold-v0.8.css'
 import './index.css'
 
 netlifyIdentity.init()
