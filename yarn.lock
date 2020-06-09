@@ -1440,40 +1440,33 @@
     "@nodelib/fs.scandir" "2.1.3"
     fastq "^1.6.0"
 
-"@prisma/cli@2.0.0-alpha.1311":
-  version "2.0.0-alpha.1311"
-  resolved "https://registry.yarnpkg.com/@prisma/cli/-/cli-2.0.0-alpha.1311.tgz#6682646ef19dce2bbe1b8255ccc99ea4ef53b7c4"
-  integrity sha512-SZjSiucmvAthB6T5G94zfBT2cbkGf8U8tTmkZjN9oi+TawWf3lNBXgTSAmF6a/HFrFaLbeBEhYu2NvId1KJ2ZQ==
+"@prisma/cli@2.0.0-beta.8":
+  version "2.0.0-beta.8"
+  resolved "https://registry.yarnpkg.com/@prisma/cli/-/cli-2.0.0-beta.8.tgz#18356d5464040339c9c01cdf9a4241c1bccc5dea"
+  integrity sha512-l1bHUmPzjdOF87MzIkcE55AkGLDKV2apmS2D9ZuYM+7hWWMk7lcJjjquDr9RAtSDMN8nuvYQcXnFFg7JP4DUxw==
 
-"@prisma/client@2.0.0-alpha.1311":
-  version "2.0.0-alpha.1311"
-  resolved "https://registry.yarnpkg.com/@prisma/client/-/client-2.0.0-alpha.1311.tgz#5cd2a91a1bd409eac49f15519c638e39ce101db6"
-  integrity sha512-x4lUn62lXYtGS7jHJk3NBcBDEY2gtbZeqCIl6uANwikUUNHBs0oLsxgm7NxhCKY/XihiSJm6y3WD+/JdJC34lA==
+"@prisma/client@2.0.0-beta.8":
+  version "2.0.0-beta.8"
+  resolved "https://registry.yarnpkg.com/@prisma/client/-/client-2.0.0-beta.8.tgz#1f2effb3b377fab4453fef894a04cc16bf46ef8f"
+  integrity sha512-MOUYJ5IRsmufhEoBs+sBNlmkxkUcsE0ONY/RcvQ+F1svU8iKeGi7UNFUxKwzYCe15mmAfvhh/ZaJ34/tUkpBeQ==
   dependencies:
     pkg-up "^3.1.0"
 
-"@prisma/debug@2.0.0-alpha.1311":
-  version "2.0.0-alpha.1311"
-  resolved "https://registry.yarnpkg.com/@prisma/debug/-/debug-2.0.0-alpha.1311.tgz#8324a636154b697e02f06b8922e464de6ba3c24a"
-  integrity sha512-VbnQfSNWugarbyCZePT83oH85scpGhSixWuibD4wNTEi732foLgD3gCr3g+nyAR30xBlS2znGSuXx2qCPp5yEA==
+"@prisma/debug@2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@prisma/debug/-/debug-2.0.0.tgz#ad65a1744dad7ebaf00230f086ba0b511c95f678"
+  integrity sha512-ze3HgPnuRI01YvBGlqnaYm5Nel/mrWclUdBFaLAke/1PZuvlnhpK1092G+7VMKeGS7AEHd3w7tC/kI/9c5qY7g==
   dependencies:
     debug "^4.1.1"
 
-"@prisma/debug@2.0.0-beta.9":
-  version "2.0.0-beta.9"
-  resolved "https://registry.yarnpkg.com/@prisma/debug/-/debug-2.0.0-beta.9.tgz#2da4acf7bd78f0dcb19ed7014d9c1cd8b28a0112"
-  integrity sha512-OVm3Ufp7cCeM63FB1s/D6Ga2dHzHMEeQQJIEuFOv9A+PhGrSFfCaO3MdkspDCAgwtaBP2vhcRs0bsQHp2eE4jA==
+"@prisma/engine-core@2.0.0-1":
+  version "2.0.0-1"
+  resolved "https://registry.yarnpkg.com/@prisma/engine-core/-/engine-core-2.0.0-1.tgz#27c06b238018952b71f10121fc0053df271a37d6"
+  integrity sha512-5owNIri995dyjK7XW1HAl917pwBJ558C8LI+hhE3ouw0MCHUQ9SH3Pbl4MmciNCB2a7BALh6qHXwxaygJznWlA==
   dependencies:
-    debug "^4.1.1"
-
-"@prisma/engine-core@2.0.0-alpha.1311":
-  version "2.0.0-alpha.1311"
-  resolved "https://registry.yarnpkg.com/@prisma/engine-core/-/engine-core-2.0.0-alpha.1311.tgz#5c4b4580158dee2f5ca0ee85c02b8cd452c287c9"
-  integrity sha512-fj+IQ9ZD5INmQpgn+qMS0cA81OloLiQA5E4afNih19mbCPiEhklz3bLZ9iQmzEAT6MRjj/WAKx5hbwrQhz7bjg==
-  dependencies:
-    "@prisma/debug" "2.0.0-alpha.1311"
-    "@prisma/generator-helper" "2.0.0-alpha.1311"
-    "@prisma/get-platform" "2.0.0-alpha.1311"
+    "@prisma/debug" "2.0.0"
+    "@prisma/generator-helper" "2.0.0"
+    "@prisma/get-platform" "2.0.0"
     bent "^7.1.2"
     chalk "^3.0.0"
     cross-fetch "^3.0.4"
@@ -1485,32 +1478,13 @@
     terminal-link "^2.1.1"
     undici mcollina/undici
 
-"@prisma/engine-core@2.0.0-beta.9":
-  version "2.0.0-beta.9"
-  resolved "https://registry.yarnpkg.com/@prisma/engine-core/-/engine-core-2.0.0-beta.9.tgz#be91b1462d32d0587efb28407b3f19318ddbbe6d"
-  integrity sha512-j3LjQVA69jZHHFDrnXWxf8a9zWSc2Fg7YLF0mC6An7PKdPf8T+NWPJFztwieOormL96Gg0eVdwNyb0O4YyNSbA==
+"@prisma/fetch-engine@2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@prisma/fetch-engine/-/fetch-engine-2.0.0.tgz#cc206b8f24a37d8fb22b01397b201ae19a1c3967"
+  integrity sha512-75AO1wjjp1ezzSUNyo+zSgH2oA4DIy87by0yKiNUMLJcfCX9yP2dbtPzNr61SrBwYNXex5194J5kcrs2j+Wwew==
   dependencies:
-    "@prisma/debug" "2.0.0-beta.9"
-    "@prisma/generator-helper" "2.0.0-beta.9"
-    "@prisma/get-platform" "2.0.0-beta.9"
-    bent "^7.1.2"
-    chalk "^3.0.0"
-    cross-fetch "^3.0.4"
-    fast-json-stringify "^2.0.0"
-    get-stream "^5.1.0"
-    indent-string "^4.0.0"
-    new-github-issue-url "^0.2.1"
-    p-retry "^4.2.0"
-    terminal-link "^2.1.1"
-    undici mcollina/undici
-
-"@prisma/fetch-engine@2.0.0-alpha.1311":
-  version "2.0.0-alpha.1311"
-  resolved "https://registry.yarnpkg.com/@prisma/fetch-engine/-/fetch-engine-2.0.0-alpha.1311.tgz#2db128684b14983392e05b74e53baf6c4ae73703"
-  integrity sha512-3DfkAFv/gFGkuQ25wA8PfvmWArnffwp970A0/XQ8hqSSwDyGSeBv7ur5eL0S/trfRzlWDbYcoeioz/EyCgc0ew==
-  dependencies:
-    "@prisma/debug" "2.0.0-alpha.1311"
-    "@prisma/get-platform" "2.0.0-alpha.1311"
+    "@prisma/debug" "2.0.0"
+    "@prisma/get-platform" "2.0.0"
     chalk "^4.0.0"
     execa "^4.0.0"
     find-cache-dir "^3.3.1"
@@ -1527,109 +1501,34 @@
     rimraf "^3.0.2"
     tempy "^0.5.0"
 
-"@prisma/fetch-engine@2.0.0-beta.9":
-  version "2.0.0-beta.9"
-  resolved "https://registry.yarnpkg.com/@prisma/fetch-engine/-/fetch-engine-2.0.0-beta.9.tgz#9f026c0a039575bd5a7d5a39b5cc2f7d4e83b7e4"
-  integrity sha512-l51N18xzy7si695NFuZjj6Xm9VKPCmhWju0e4pkq7bRIvhxLZmtAtMkjXV0+TjCwI2/1QtGxzjsR1zzLQbhb/g==
+"@prisma/generator-helper@2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@prisma/generator-helper/-/generator-helper-2.0.0.tgz#8c42416ffaf919682c6abf16993c7eb6cd64bbd5"
+  integrity sha512-AnX2F5tkIvt/mebRuNlzEwL641dDDquoTiFpN7J9oy5hD/cT2eyn30oqbgwn6vjypWsLUlD37byjGh/zGCK/Wg==
   dependencies:
-    "@prisma/debug" "2.0.0-beta.9"
-    "@prisma/get-platform" "2.0.0-beta.9"
-    chalk "^4.0.0"
-    execa "^4.0.0"
-    find-cache-dir "^3.3.1"
-    hasha "^5.2.0"
-    http-proxy-agent "^4.0.1"
-    https-proxy-agent "^5.0.0"
-    make-dir "^3.0.2"
-    node-fetch "^2.6.0"
-    p-filter "^2.1.0"
-    p-map "^4.0.0"
-    p-retry "^4.2.0"
-    progress "^2.0.3"
-    rimraf "^3.0.2"
-    tempy "^0.5.0"
-
-"@prisma/generator-helper@2.0.0-alpha.1311":
-  version "2.0.0-alpha.1311"
-  resolved "https://registry.yarnpkg.com/@prisma/generator-helper/-/generator-helper-2.0.0-alpha.1311.tgz#71f43e708f9cba457f0986830cd35db17dc6fcbd"
-  integrity sha512-HFJsG+X3J7mO6z8ILQKyWzfCLSM05WL2ZfEdsHLFzzASCI8w/0BvDP7iyYcAjHGzYRH8A61qfcrHt5OuhaH24Q==
-  dependencies:
-    "@prisma/debug" "2.0.0-alpha.1311"
+    "@prisma/debug" "2.0.0"
     "@types/cross-spawn" "^6.0.1"
     chalk "^3.0.0"
     cross-spawn "^7.0.2"
 
-"@prisma/generator-helper@2.0.0-beta.9":
-  version "2.0.0-beta.9"
-  resolved "https://registry.yarnpkg.com/@prisma/generator-helper/-/generator-helper-2.0.0-beta.9.tgz#5d3b430423629cf0f77b7a3f38528d709227041c"
-  integrity sha512-nn0u0SPP+EAQ5raOLBXnpeFG6YhxSECi/B1EmU8vAfBbcGpuHKtzZO0QxPvz94gcBeqqy8ubc5vkOJ2soEor/g==
+"@prisma/get-platform@2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@prisma/get-platform/-/get-platform-2.0.0.tgz#a0d8c4f053b74400b27818db148d6baa641931f0"
+  integrity sha512-J9O7cAW1aHRMir660stP0kVg3jUL7gGw/LIJkontPIsXbjAfUZQwmdm8OrfgJar7qJ2KDYjtSD9vT4VE7cPI2Q==
   dependencies:
-    "@prisma/debug" "2.0.0-beta.9"
-    "@types/cross-spawn" "^6.0.1"
-    chalk "^3.0.0"
-    cross-spawn "^7.0.2"
+    "@prisma/debug" "2.0.0"
 
-"@prisma/get-platform@2.0.0-alpha.1311":
-  version "2.0.0-alpha.1311"
-  resolved "https://registry.yarnpkg.com/@prisma/get-platform/-/get-platform-2.0.0-alpha.1311.tgz#4a11fcc15488a92b7be34b5385cfad9e04eef5c6"
-  integrity sha512-0lv9Ump0g+wf0TgqPAGeBatLjdNhyT6DJ6EIg0ma0JoR0oJf7KM+32bsbBsyCbb8J7MugOraSmRFfmZId4NevQ==
-  dependencies:
-    "@prisma/debug" "2.0.0-alpha.1311"
-
-"@prisma/get-platform@2.0.0-beta.9":
-  version "2.0.0-beta.9"
-  resolved "https://registry.yarnpkg.com/@prisma/get-platform/-/get-platform-2.0.0-beta.9.tgz#830677e6340e0aa99f4440b04ebd60c82d740476"
-  integrity sha512-G2euAm/7361Hu2KSpCr+/akS7dxQ9xYBCbTM1mNuTSymqbZQOW/6caHd4dzQUiHZ9qdQRvBPoyLQiENYunTp8A==
-  dependencies:
-    "@prisma/debug" "2.0.0-beta.9"
-
-"@prisma/sdk@2.0.0-alpha.1311":
-  version "2.0.0-alpha.1311"
-  resolved "https://registry.yarnpkg.com/@prisma/sdk/-/sdk-2.0.0-alpha.1311.tgz#2d7189444625408d2696acdd65e2fa11167eecf5"
-  integrity sha512-LC3HuSTqEMf2AdS8naJWIaIsI1JpYZO6rKbOYFmpZvC2r+4G8h1nHOwViE//XF4/tYnqCV2iBRPtxGxuAssJvg==
+"@prisma/sdk@^2.0.0-beta.8":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@prisma/sdk/-/sdk-2.0.0.tgz#aa0d52106cf497937d7b16108375837b82a4e8cc"
+  integrity sha512-wvweyvjVldoW2QB+8TyQVfk14v5CnqMFxd20rF5Z8PFERnjVwjWqTQmvbdOwEiTyQqy2OY5WVFYwuyP72lOaWw==
   dependencies:
     "@apexearth/copy" "^1.4.5"
-    "@prisma/debug" "2.0.0-alpha.1311"
-    "@prisma/engine-core" "2.0.0-alpha.1311"
-    "@prisma/fetch-engine" "2.0.0-alpha.1311"
-    "@prisma/generator-helper" "2.0.0-alpha.1311"
-    "@prisma/get-platform" "2.0.0-alpha.1311"
-    archiver "^4.0.0"
-    arg "^4.1.3"
-    chalk "3.0.0"
-    checkpoint-client "^1.0.7"
-    cli-truncate "^2.1.0"
-    execa "^4.0.0"
-    globby "^11.0.0"
-    has-yarn "^2.1.0"
-    make-dir "^3.0.2"
-    node-fetch "2.6.0"
-    p-map "^4.0.0"
-    read-pkg-up "^7.0.1"
-    resolve-pkg "^2.0.0"
-    rimraf "^3.0.2"
-    string-width "^4.2.0"
-    strip-ansi "6.0.0"
-    strip-indent "3.0.0"
-    tar "^6.0.1"
-    temp-dir "^2.0.0"
-    temp-write "^4.0.0"
-    tempy "^0.5.0"
-    terminal-link "^2.1.1"
-    tmp "0.2.1"
-    url-parse "^1.4.7"
-
-"@prisma/sdk@^2.0.0-alpha.1311":
-  version "2.0.0-beta.9"
-  resolved "https://registry.yarnpkg.com/@prisma/sdk/-/sdk-2.0.0-beta.9.tgz#49ab0954718297b7072c5e6f8002333a2dde4ba0"
-  integrity sha512-7ByPjwkEoa0f5uLpmTr0gPljCvR6PMSQBDikT1N9GasPT6PQN26wmg6GcNhEtJrS0JBUrfWMDMxgjuEZKc393A==
-  dependencies:
-    "@apexearth/copy" "^1.4.5"
-    "@prisma/debug" "2.0.0-beta.9"
-    "@prisma/engine-core" "2.0.0-beta.9"
-    "@prisma/fetch-engine" "2.0.0-beta.9"
-    "@prisma/generator-helper" "2.0.0-beta.9"
-    "@prisma/get-platform" "2.0.0-beta.9"
+    "@prisma/debug" "2.0.0"
+    "@prisma/engine-core" "2.0.0-1"
+    "@prisma/fetch-engine" "2.0.0"
+    "@prisma/generator-helper" "2.0.0"
+    "@prisma/get-platform" "2.0.0"
     archiver "^4.0.0"
     arg "^4.1.3"
     chalk "3.0.0"
@@ -1708,13 +1607,13 @@
   resolved "https://registry.yarnpkg.com/@protobufjs/utf8/-/utf8-1.1.0.tgz#a777360b5b39a1a2e5106f8e858f2fd2d060c570"
   integrity sha1-p3c2C1s5oaLlEG+OhY8v0tBgxXA=
 
-"@redwoodjs/api@^0.9.2-canary.1":
-  version "0.9.2-canary.1"
-  resolved "https://registry.yarnpkg.com/@redwoodjs/api/-/api-0.9.2-canary.1.tgz#51ff8665bd3c7cb2fd8c0e3211e8fe6e3c0e195e"
-  integrity sha512-Ag6gIo6m1pkmuXVAweH7++SJoF3YSd31c/sDjgd3XRuDame16Kl1jjysl/ykdrG1Q6Icb3mz2WnD63h6mqIwbQ==
+"@redwoodjs/api@^0.9.1":
+  version "0.9.1"
+  resolved "https://registry.yarnpkg.com/@redwoodjs/api/-/api-0.9.1.tgz#78114e1a045df7b96e1e37cb9cfe652cbedd57da"
+  integrity sha512-L9Vgqy+4aRb/2X/9staMZJ5LVb/p9WsBJAoB8G4hd/EByRRjkvnvbFwi020J3StFAt7Ky3+uKPkJ8OKIFCBlJg==
   dependencies:
-    "@prisma/client" "2.0.0-alpha.1311"
-    "@redwoodjs/internal" "^0.9.2-canary.1+e69a130"
+    "@prisma/client" "2.0.0-beta.8"
+    "@redwoodjs/internal" "^0.9.1"
     apollo-server-lambda "2.14.2"
     babel-plugin-macros "^2.8.0"
     core-js "3.6.4"
@@ -1728,18 +1627,18 @@
     lodash.omitby "^4.6.0"
     merge-graphql-schemas "^1.7.6"
 
-"@redwoodjs/auth@^0.9.2-canary.1":
-  version "0.9.2-canary.1"
-  resolved "https://registry.yarnpkg.com/@redwoodjs/auth/-/auth-0.9.2-canary.1.tgz#bde1a76d2056189e1da12e35a0ad918cc916b25a"
-  integrity sha512-/zUYxZ7cEjAAvTl/bQad2xpK/wleltbits7DOixV/gnerNKIdOZFogdd+kXtJrA9plD5DZeMd436hvTJ7Yt0tg==
+"@redwoodjs/auth@^0.9.1":
+  version "0.9.1"
+  resolved "https://registry.yarnpkg.com/@redwoodjs/auth/-/auth-0.9.1.tgz#3e8b08de857ea6d5960cad94e882d067f7d53083"
+  integrity sha512-/zbwdFDzt1x1EFUiOmvRKNp0tIKAMor7pgP59leuxm8JgDVuE26cznCgugVOQ9dsLK+QWBg7r2e5I7buoUSrbA==
 
-"@redwoodjs/cli@^0.9.2-canary.1+e69a130":
-  version "0.9.2-canary.1"
-  resolved "https://registry.yarnpkg.com/@redwoodjs/cli/-/cli-0.9.2-canary.1.tgz#de6db2ba872913b9956f79266844a5cea1289890"
-  integrity sha512-uJYaKw/sKVJXczcKQudh+I4/G8vf0Zqr1HTtTlK7OIfl5aviiNH5VgFf6++7DGCCSjrnQkPaAdRoz064PsFySA==
+"@redwoodjs/cli@^0.9.1":
+  version "0.9.1"
+  resolved "https://registry.yarnpkg.com/@redwoodjs/cli/-/cli-0.9.1.tgz#79c20c48864b50273f3f30012c02154332a5bf78"
+  integrity sha512-lJiuEvlqav8HiDEiuIgoYeI5gtDwmEHu5darnp89b+sSdl0N7kiV+sQccWYTRCWOCz8nD5MkLfo2oztTCKJIOA==
   dependencies:
-    "@prisma/sdk" "^2.0.0-alpha.1311"
-    "@redwoodjs/internal" "^0.9.2-canary.1+e69a130"
+    "@prisma/sdk" "^2.0.0-beta.8"
+    "@redwoodjs/internal" "^0.9.1"
     camelcase "^5.3.1"
     chalk "^3.0.0"
     concurrently "^5.1.0"
@@ -1760,10 +1659,10 @@
     terminal-link "^2.1.1"
     yargs "^15.3.1"
 
-"@redwoodjs/core@^0.9.2-canary.1":
-  version "0.9.2-canary.1"
-  resolved "https://registry.yarnpkg.com/@redwoodjs/core/-/core-0.9.2-canary.1.tgz#28b7642f9fbed47eed1b937cbc12503cdfba0ceb"
-  integrity sha512-l56KZ2J6kTSaZNfMZAUJy58E/oVDA0l60DIo6BwyJgzrtomtHsO3efJJRu1lqjXwB9WlxMcaQJ/kjGlEZ2qSeg==
+"@redwoodjs/core@^0.9.1":
+  version "0.9.1"
+  resolved "https://registry.yarnpkg.com/@redwoodjs/core/-/core-0.9.1.tgz#67603ad1318af05f2bce03888b480beba530c84a"
+  integrity sha512-kBYotfekMuenXdCRHEK9v/+1FWFUsKCoPWXLMPxlQTPUkOZReZTYYjRyiDce6Ogn2qQ68BnUcA0M5GDayp704Q==
   dependencies:
     "@babel/cli" "^7.8.4"
     "@babel/core" "^7.9.0"
@@ -1774,12 +1673,12 @@
     "@babel/preset-react" "^7.9.4"
     "@babel/preset-typescript" "^7.9.0"
     "@babel/runtime-corejs3" "^7.9.2"
-    "@prisma/cli" "2.0.0-alpha.1311"
-    "@redwoodjs/cli" "^0.9.2-canary.1+e69a130"
-    "@redwoodjs/dev-server" "^0.9.2-canary.1+e69a130"
-    "@redwoodjs/eslint-config" "^0.9.2-canary.1+e69a130"
-    "@redwoodjs/internal" "^0.9.2-canary.1+e69a130"
-    "@redwoodjs/testing" "^0.9.2-canary.1+e69a130"
+    "@prisma/cli" "2.0.0-beta.8"
+    "@redwoodjs/cli" "^0.9.1"
+    "@redwoodjs/dev-server" "^0.9.1"
+    "@redwoodjs/eslint-config" "^0.9.1"
+    "@redwoodjs/internal" "^0.9.1"
+    "@redwoodjs/testing" "^0.9.1"
     "@testing-library/jest-dom" "^5.8.0"
     "@types/jest" "^25.1.4"
     "@types/node" "^13.9.5"
@@ -1816,13 +1715,13 @@
     webpack-dev-server "^3.10.3"
     webpack-merge "^4.2.2"
 
-"@redwoodjs/dev-server@^0.9.2-canary.1+e69a130":
-  version "0.9.2-canary.1"
-  resolved "https://registry.yarnpkg.com/@redwoodjs/dev-server/-/dev-server-0.9.2-canary.1.tgz#af4d2dc814ffe69b34b5c2b761008207169efe84"
-  integrity sha512-ntkadEvts25RETUHNF95gjtpffVwfZrPLuJ96CCnNPbjWBNFVDRdRz2+8I1CDYgsOifqiNHOlFU4VQF9lt6p+g==
+"@redwoodjs/dev-server@^0.9.1":
+  version "0.9.1"
+  resolved "https://registry.yarnpkg.com/@redwoodjs/dev-server/-/dev-server-0.9.1.tgz#2ab9f3e3350e229b5e6155668e23a2fca3a21ec2"
+  integrity sha512-mn9/dJ3qeX5ZEJ7QSvk/fvHwZgKMYeKb4PjK1LHpldmPiSkPHc52YKvs8g8e2vEGW/7ixx+Z3yPOEzSVcVYXYw==
   dependencies:
     "@babel/register" "^7.9.0"
-    "@redwoodjs/internal" "^0.9.2-canary.1+e69a130"
+    "@redwoodjs/internal" "^0.9.1"
     body-parser "^1.19.0"
     chokidar "^3.3.1"
     express "^4.17.1"
@@ -1833,12 +1732,12 @@
     youch "^2.0.10"
     youch-terminal "^1.0.0"
 
-"@redwoodjs/eslint-config@^0.9.2-canary.1+e69a130":
-  version "0.9.2-canary.1"
-  resolved "https://registry.yarnpkg.com/@redwoodjs/eslint-config/-/eslint-config-0.9.2-canary.1.tgz#0e2e2833784c063c4a902c7b0533b70040a24ea6"
-  integrity sha512-WKpnjH49OjmjmNPIM6RNKJsHvbGnNgzmdteMdTRIy1abjxlgZeavv6pckTQLLVzOqSybE6lpJVYK8LkSFl+c/A==
+"@redwoodjs/eslint-config@^0.9.1":
+  version "0.9.1"
+  resolved "https://registry.yarnpkg.com/@redwoodjs/eslint-config/-/eslint-config-0.9.1.tgz#6a63a109c57d77e0137b021fc62fa465424927fb"
+  integrity sha512-zDoPJGROKe96ZTsp+OxwobAj0/mu5g/qt3A2EyHY0V4Fy+fffkTv9xyFoIlcKWodLmJDP2DIYZh8pkLOOWv5xQ==
   dependencies:
-    "@redwoodjs/eslint-plugin-redwood" "^0.9.2-canary.1+e69a130"
+    "@redwoodjs/eslint-plugin-redwood" "^0.9.1"
     "@typescript-eslint/eslint-plugin" "^2.27.0"
     "@typescript-eslint/parser" "^2.27.0"
     babel-eslint "^10.1.0"
@@ -1854,40 +1753,40 @@
     eslint-plugin-react-hooks "^3.0.0"
     prettier "^2.0.5"
 
-"@redwoodjs/eslint-plugin-redwood@^0.9.2-canary.1+e69a130":
-  version "0.9.2-canary.1"
-  resolved "https://registry.yarnpkg.com/@redwoodjs/eslint-plugin-redwood/-/eslint-plugin-redwood-0.9.2-canary.1.tgz#d3ecf3078b1f01510577f44a173421d517c70cd0"
-  integrity sha512-9s9QZo2T1Oe6aoQ3OAhVo/bN5dhWrFTzgNyTDlrmbekpOrLkilqmJzYVZgYH1DQSKJ8vSZV28Bd1KeixlOdBSQ==
+"@redwoodjs/eslint-plugin-redwood@^0.9.1":
+  version "0.9.1"
+  resolved "https://registry.yarnpkg.com/@redwoodjs/eslint-plugin-redwood/-/eslint-plugin-redwood-0.9.1.tgz#01f7ed19cc618c54a2e240dd8f7fe139b480b2bc"
+  integrity sha512-pmdEAWkGD1T6b+tpcG0FHv+6J7sl4EAKX3SD+xIPO6fIQd1nDdiS8wpxcqqOWlNNCCABR0iI2CM2YYOdqofsXA==
 
-"@redwoodjs/internal@^0.9.2-canary.1+e69a130":
-  version "0.9.2-canary.1"
-  resolved "https://registry.yarnpkg.com/@redwoodjs/internal/-/internal-0.9.2-canary.1.tgz#2d0d3644923ba972b35c832178a1a3e753f06508"
-  integrity sha512-AZL2ijFaAAmUpOn4dHaNaHD1Ob3h+hhAzuaf5NfQDrVXjdcjfiQHwmrc3uuJTPxOaMgR8C9fm9n98pREdZ7jlg==
+"@redwoodjs/internal@^0.9.1":
+  version "0.9.1"
+  resolved "https://registry.yarnpkg.com/@redwoodjs/internal/-/internal-0.9.1.tgz#46cf2b0405dad54421328d20718ed76dfe69f236"
+  integrity sha512-kBBgy01vxNUA6J8P4twST4X6DCIS+NMUpN3gTsPxPQkqdOWx9xI/cbPWJO5FsJ3i69j3zeaCoHJAiSZVgAborA==
   dependencies:
     deepmerge "^4.2.2"
     findup-sync "^4.0.0"
     toml "^3.0.0"
 
-"@redwoodjs/router@^0.9.2-canary.1":
-  version "0.9.2-canary.1"
-  resolved "https://registry.yarnpkg.com/@redwoodjs/router/-/router-0.9.2-canary.1.tgz#e48d93aac9f1bf3268d10b8684b578e2c11e2a54"
-  integrity sha512-J4vy2/l4pLOuCy3jas6hxcA/qfeMfY/ELiNtpk4l+8+pXGoR3N74WkSQ2rerD1SuhHB3Qn05KLKFbHnfkNEC5A==
+"@redwoodjs/router@^0.9.1":
+  version "0.9.1"
+  resolved "https://registry.yarnpkg.com/@redwoodjs/router/-/router-0.9.1.tgz#06a3ac3c9cf0469df83c56ddcecbb02eca6e2166"
+  integrity sha512-bdSSoI1znybzbEwKtPwvDs3H2+8dLt/itU71avn4Iz49ITigZkyXUT3z8U2lZb/lZ22m0Na9d+hT64EhJsbkvw==
   dependencies:
     core-js "3.6.4"
 
-"@redwoodjs/testing@^0.9.2-canary.1+e69a130":
-  version "0.9.2-canary.1"
-  resolved "https://registry.yarnpkg.com/@redwoodjs/testing/-/testing-0.9.2-canary.1.tgz#17153738375b9fb9559071e2fda08c8b4f96f47e"
-  integrity sha512-8X7akl7bLwH0DWjHNlHaLbnpq6fIEB7pdjplpxZTfvYI0nkX35RRasQrVYGY7HASxvccDhz0wwGVsfqMFD3WVA==
+"@redwoodjs/testing@^0.9.1":
+  version "0.9.1"
+  resolved "https://registry.yarnpkg.com/@redwoodjs/testing/-/testing-0.9.1.tgz#ed902027bd9f16deb6dd6682b5d6d55708afb3db"
+  integrity sha512-9CoNhCbO8py1T4yqBq+9/i8CA5oRGLzb3c9TnEsu/wl5vHtmXiomEB1k6/QFZeep8Li9hnVrfQURGPDxIvEMEA==
   dependencies:
-    "@redwoodjs/internal" "^0.9.2-canary.1+e69a130"
-    "@redwoodjs/web" "^0.9.2-canary.1+e69a130"
+    "@redwoodjs/internal" "^0.9.1"
+    "@redwoodjs/web" "^0.9.1"
     "@testing-library/react" "^10.0.4"
 
-"@redwoodjs/web@^0.9.2-canary.1", "@redwoodjs/web@^0.9.2-canary.1+e69a130":
-  version "0.9.2-canary.1"
-  resolved "https://registry.yarnpkg.com/@redwoodjs/web/-/web-0.9.2-canary.1.tgz#78257e6c39f17b5af24ff9b64136349d7ac96ad9"
-  integrity sha512-30fFHlwmvaA7HQoiBHp5ITGUY6jKVw3R0dlmn/qjQFdGZs/qyB+fF8LSmaCNB+oSOEJiN4qTmfOiTnTZu9h07w==
+"@redwoodjs/web@^0.9.1":
+  version "0.9.1"
+  resolved "https://registry.yarnpkg.com/@redwoodjs/web/-/web-0.9.1.tgz#7201f48e0c446ab3f0719f428877d11d3ad1fbeb"
+  integrity sha512-d3cy4E6c/y5CzWkYZt+nbJB/5/n7ZmrLO2nw/YBSm16UG4FHdJC/OvClVXO39KxPPtviiHAsB+CEoID01vtHbA==
   dependencies:
     "@apollo/react-components" "^3.1.3"
     "@apollo/react-hooks" "^3.1.3"
@@ -11325,9 +11224,9 @@ typescript@^3.8.3:
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.8.3.tgz#409eb8544ea0335711205869ec458ab109ee1061"
   integrity sha512-MYlEfn5VrLNsgudQTVJeNaQFUAI7DkhnOjdpAp4T+ku1TfQClewlbSuTVHiA+8skNBgaf02TL/kLOvig4y3G8w==
 
-undici@mcollina/undici:
-  version "0.5.0"
-  resolved "https://codeload.github.com/mcollina/undici/tar.gz/6c3d7eed592cab9c4b63d56164ecd3cc9358945a"
+"undici@github:mcollina/undici":
+  version "1.0.1"
+  resolved "https://codeload.github.com/mcollina/undici/tar.gz/4a54988c5451db8506fd2f954da2bc70d9b799ad"
   dependencies:
     http-parser-js "^0.5.2"
 

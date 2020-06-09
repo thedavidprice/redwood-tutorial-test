@@ -7,7 +7,8 @@
     ]
   },
   "devDependencies": {
-    "@redwoodjs/core": "^0.9.2-canary.1"
+    "@redwoodjs/core": "^0.9.1",
+    "netlify-plugin-prisma-provider": "^0.3.0"
   },
   "eslintConfig": {
     "extends": "@redwoodjs/eslint-config"
@@ -15,11 +16,5 @@
   "engines": {
     "node": ">=12",
     "yarn": ">=1.15"
-  },
-  "dependencies": {
-    "@prisma/cli": "2.0.0-alpha.1311",
-    "@prisma/client": "2.0.0-alpha.1311",
-    "@prisma/sdk": "2.0.0-alpha.1311",
-    "netlify-plugin-prisma-provider": "^0.3.0"
   }
 }
