@@ -1,4 +1,4 @@
-import { useMutation } from '@redwoodjs/web'
+import { useMutation, useFlash } from '@redwoodjs/web'
 import { Link, routes, navigate } from '@redwoodjs/router'
 
 const DELETE_POST_MUTATION = gql`
@@ -10,10 +10,11 @@ const DELETE_POST_MUTATION = gql`
 `
 
 const Post = ({ post }) => {
+  const { addMessage } = useFlash()
   const [deletePost] = useMutation(DELETE_POST_MUTATION, {
     onCompleted: () => {
       navigate(routes.posts())
-      location.reload()
+      addMessage('Post deleted.', { classes: 'rw-flash-success' })
     },
   })
 
@@ -25,53 +26,47 @@ const Post = ({ post }) => {
 
   return (
     <>
-      <div className="bg-white border rounded-lg overflow-hidden">
-        <header className="bg-gray-300 text-gray-700 py-3 px-4">
-          <h2 className="text-sm font-semibold">Post {post.id} Detail</h2>
+      <div className="rw-segment">
+        <header className="rw-segment-header">
+          <h2 className="rw-heading rw-heading-secondary">
+            Post {post.id} Detail
+          </h2>
         </header>
-        <table className="w-full text-sm">
+        <table className="rw-table">
           <tbody>
-            <tr className="odd:bg-gray-100 even:bg-white border-t">
-              <td className="font-semibold p-3 text-right md:w-1/5">id</td>
-              <td className="p-3">{post.id}</td>
+            <tr>
+              <th>id</th>
+              <td>{post.id}</td>
             </tr>
-            <tr className="odd:bg-gray-100 even:bg-white border-t">
-              <td className="font-semibold p-3 text-right md:w-1/5">title</td>
-              <td className="p-3">{post.title}</td>
+            <tr>
+              <th>title</th>
+              <td>{post.title}</td>
             </tr>
-            <tr className="odd:bg-gray-100 even:bg-white border-t">
-              <td className="font-semibold p-3 text-right md:w-1/5">body</td>
-              <td className="p-3">{post.body}</td>
+            <tr>
+              <th>body</th>
+              <td>{post.body}</td>
             </tr>
-            <tr className="odd:bg-gray-100 even:bg-white border-t">
-              <td className="font-semibold p-3 text-right md:w-1/5">
-                createdAt
-              </td>
-              <td className="p-3">{post.createdAt}</td>
+            <tr>
+              <th>createdAt</th>
+              <td>{post.createdAt}</td>
             </tr>
           </tbody>
         </table>
       </div>
-      <nav className="my-4 mx-2 text-center">
-        <ul>
-          <li className="inline-block ml-2">
-            <Link
-              to={routes.editPost({ id: post.id })}
-              className="text-xs bg-blue-600 text-white hover:bg-blue-700 rounded px-4 py-2 uppercase font-semibold tracking-wide"
-            >
-              Edit
-            </Link>
-          </li>
-          <li className="inline-block ml-2">
-            <a
-              href="#"
-              className="text-xs bg-red-600 text-white hover:bg-red-700 rounded px-4 py-2 uppercase font-semibold tracking-wide"
-              onClick={() => onDeleteClick(post.id)}
-            >
-              Delete
-            </a>
-          </li>
-        </ul>
+      <nav className="rw-button-group">
+        <Link
+          to={routes.editPost({ id: post.id })}
+          className="rw-button rw-button-blue"
+        >
+          Edit
+        </Link>
+        <a
+          href="#"
+          className="rw-button rw-button-red"
+          onClick={() => onDeleteClick(post.id)}
+        >
+          Delete
+        </a>
       </nav>
     </>
   )

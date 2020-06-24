@@ -1,3 +1,5 @@
+import gql from 'graphql-tag'
+
 export const schema = gql`
   type Post {
     id: Int!
@@ -7,18 +9,23 @@ export const schema = gql`
   }
 
   type Query {
-    posts: [Post]
-    post(id: Int!): Post
+    posts: [Post!]!
+    post(id: Int!): Post!
   }
 
-  input PostInput {
+  input CreatePostInput {
+    title: String!
+    body: String!
+  }
+
+  input UpdatePostInput {
     title: String
     body: String
   }
 
   type Mutation {
-    createPost(input: PostInput!): Post
-    updatePost(id: Int!, input: PostInput!): Post
-    deletePost(id: Int!): Post
+    createPost(input: CreatePostInput!): Post!
+    updatePost(id: Int!, input: UpdatePostInput!): Post!
+    deletePost(id: Int!): Post!
   }
 `
