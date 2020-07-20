@@ -1672,13 +1672,13 @@
     prop-types "^15.6.1"
     react-lifecycles-compat "^3.0.4"
 
-"@redwoodjs/api@^0.13.1-canary.20":
-  version "0.13.1-canary.20"
-  resolved "https://registry.yarnpkg.com/@redwoodjs/api/-/api-0.13.1-canary.20.tgz#124d4a7b79c3dcb5a02d5ac0b8642f02c14f40c4"
-  integrity sha512-h3iVPd+76lOmVEvnQu5uhmDOijEloAnRurzBP8kw64VjDa6mH/5B9yZOJUenBwWng/pxvvG28PvmWJbuhU0P7Q==
+"@redwoodjs/api@^0.14.0":
+  version "0.14.0"
+  resolved "https://registry.yarnpkg.com/@redwoodjs/api/-/api-0.14.0.tgz#6d8d703fd976563de40d5337352e49324b70a12b"
+  integrity sha512-qyIUYN3YoCcPz3qPkutbAAEZkvgc7fmg9Nj4x32pPToSmPwDdFfLRM0vN8gPdHSgJGa1Mol3PsFKTj1wdiZXuw==
   dependencies:
     "@prisma/client" "^2.1.1"
-    "@redwoodjs/internal" "^0.13.1-canary.20+a556f2cb"
+    "@redwoodjs/internal" "^0.14.0"
     apollo-server-lambda "2.16.0"
     babel-plugin-macros "^2.8.0"
     core-js "3.6.4"
@@ -1693,19 +1693,19 @@
     lodash.omitby "^4.6.0"
     merge-graphql-schemas "^1.7.6"
 
-"@redwoodjs/auth@^0.13.1-canary.20":
-  version "0.13.1-canary.20"
-  resolved "https://registry.yarnpkg.com/@redwoodjs/auth/-/auth-0.13.1-canary.20.tgz#b57824513f947936c6233de326f3a64b8e01148d"
-  integrity sha512-C/tLA/eU0LiytIKy5Fp66hciwkr3RlI6OIPRplibDWJKfO953/o16w4h3y00OFMAq1pGsZQrgWyu+9B48oEc8Q==
+"@redwoodjs/auth@^0.14.0":
+  version "0.14.0"
+  resolved "https://registry.yarnpkg.com/@redwoodjs/auth/-/auth-0.14.0.tgz#2fb7ec3704066798fd17889617daafb8ef1392f7"
+  integrity sha512-kIqi1tQdUiqi9hhnPDKy2ul9yObkbQ8H6SvLVeAoHZG2ieEolzuXoxDQT0XMt3iIHed1f8Rtn3zif5qyW3jUJQ==
 
-"@redwoodjs/cli@^0.13.1-canary.20+a556f2cb":
-  version "0.13.1-canary.20"
-  resolved "https://registry.yarnpkg.com/@redwoodjs/cli/-/cli-0.13.1-canary.20.tgz#00b3ce5425469c85f8943c70385735004e077836"
-  integrity sha512-5jAAylosJapO2EyKz+gvmW99ByTOe/Rtz8KoMwidNlK0E0gCMljQsaBMa0Kf1mgVpWK8x2BunHRCc13wKKhKIA==
+"@redwoodjs/cli@^0.14.0":
+  version "0.14.0"
+  resolved "https://registry.yarnpkg.com/@redwoodjs/cli/-/cli-0.14.0.tgz#315fd13ae8b8c48d0b59133f172ed8b3d2a64b7f"
+  integrity sha512-k83Tq3BYAmE+YxO0VrRtfE8N91rxDfTiOAvSWz89uhAlPPrwWikIed0B0cqVufTmpcbkn4j6n/pmbaN5ZnIuYA==
   dependencies:
     "@prisma/sdk" "^2.1.1"
-    "@redwoodjs/internal" "^0.13.1-canary.20+a556f2cb"
-    "@redwoodjs/structure" "^0.13.1-canary.20+a556f2cb"
+    "@redwoodjs/internal" "^0.14.0"
+    "@redwoodjs/structure" "^0.14.0"
     camelcase "^5.3.1"
     chalk "^3.0.0"
     concurrently "^5.1.0"
@@ -1726,10 +1726,10 @@
     terminal-link "^2.1.1"
     yargs "^15.3.1"
 
-"@redwoodjs/core@^0.13.1-canary.20":
-  version "0.13.1-canary.20"
-  resolved "https://registry.yarnpkg.com/@redwoodjs/core/-/core-0.13.1-canary.20.tgz#70690a6ce789f71733151f9cb8a327cd7aee3f7c"
-  integrity sha512-mOdcDHwKX2YqrxU+JjmqYRuB2Yj6qFj/+5sMICyy6fI1CJycJO9Y06UFJVCraBtXzg5qN2UVzB2mqZbmbMVHdQ==
+"@redwoodjs/core@^0.14.0":
+  version "0.14.0"
+  resolved "https://registry.yarnpkg.com/@redwoodjs/core/-/core-0.14.0.tgz#3f2d0a4ab35ce21c8ad17e776bdfd50b23dde9d6"
+  integrity sha512-BY1QJPyRh6GsdwrR1WwxszzYslnLS1h9DMHckRmp9ssgbocjBq+osojfpjyWZBGMCe/7BykbeD+LSW2UFUrb6A==
   dependencies:
     "@babel/cli" "^7.8.4"
     "@babel/core" "^7.9.0"
@@ -1741,11 +1741,11 @@
     "@babel/preset-typescript" "^7.9.0"
     "@babel/runtime-corejs3" "^7.9.2"
     "@prisma/cli" "^2.1.1"
-    "@redwoodjs/cli" "^0.13.1-canary.20+a556f2cb"
-    "@redwoodjs/dev-server" "^0.13.1-canary.20+a556f2cb"
-    "@redwoodjs/eslint-config" "^0.13.1-canary.20+a556f2cb"
-    "@redwoodjs/internal" "^0.13.1-canary.20+a556f2cb"
-    "@redwoodjs/testing" "^0.13.1-canary.20+a556f2cb"
+    "@redwoodjs/cli" "^0.14.0"
+    "@redwoodjs/dev-server" "^0.14.0"
+    "@redwoodjs/eslint-config" "^0.14.0"
+    "@redwoodjs/internal" "^0.14.0"
+    "@redwoodjs/testing" "^0.14.0"
     "@storybook/react" "^5.3.19"
     "@testing-library/jest-dom" "^5.8.0"
     "@types/jest" "^25.1.4"
@@ -1783,13 +1783,13 @@
     webpack-dev-server "^3.10.3"
     webpack-merge "^4.2.2"
 
-"@redwoodjs/dev-server@^0.13.1-canary.20+a556f2cb":
-  version "0.13.1-canary.20"
-  resolved "https://registry.yarnpkg.com/@redwoodjs/dev-server/-/dev-server-0.13.1-canary.20.tgz#85039d15403e614cf75aa138ad78b8e43270e0e3"
-  integrity sha512-W8+7mAIkFfU8gQhJDhqVZsrrpE41/lP9gOPLtuMEgRXIeCOPnNJgPi1IYTpLsi8GwpoSQjK+UuNEXUFSTkIjHg==
+"@redwoodjs/dev-server@^0.14.0":
+  version "0.14.0"
+  resolved "https://registry.yarnpkg.com/@redwoodjs/dev-server/-/dev-server-0.14.0.tgz#2bd64c8381b1c7c976bf66441951c8f6c7be89a7"
+  integrity sha512-NTKiQNYnhlYmdVaQ75w/Q++at1tnN58dwYtH08JI+VDV3ol+YO+4LMJG6rNmkl+ShJjZSsR6s7Zq/xjXFF1BJA==
   dependencies:
     "@babel/register" "^7.9.0"
-    "@redwoodjs/internal" "^0.13.1-canary.20+a556f2cb"
+    "@redwoodjs/internal" "^0.14.0"
     body-parser "^1.19.0"
     chokidar "^3.3.1"
     express "^4.17.1"
@@ -1800,12 +1800,12 @@
     youch "^2.0.10"
     youch-terminal "^1.0.0"
 
-"@redwoodjs/eslint-config@^0.13.1-canary.20+a556f2cb":
-  version "0.13.1-canary.20"
-  resolved "https://registry.yarnpkg.com/@redwoodjs/eslint-config/-/eslint-config-0.13.1-canary.20.tgz#77914d7e66d84ae300bc372f77db915e1a52ac76"
-  integrity sha512-IIfq2sLi6jGPvmbOcB9miLX/Bsuz4m7FbK5PElE9yZeGmgnkrsMCByPdtUbR4WnsvKLQZLxL+yKp9MWJhgK/bg==
+"@redwoodjs/eslint-config@^0.14.0":
+  version "0.14.0"
+  resolved "https://registry.yarnpkg.com/@redwoodjs/eslint-config/-/eslint-config-0.14.0.tgz#462f541aa69c1d7ba085cc0731725d9ffa7d36b4"
+  integrity sha512-ovQXRaEr+JAKClM7JFr2UbiIHFFWv4GRzhWVqQRerpSGoa0it68VxQtmUzcavbkYSwS0huIn8ua01EVjtfriZg==
   dependencies:
-    "@redwoodjs/eslint-plugin-redwood" "^0.13.1-canary.20+a556f2cb"
+    "@redwoodjs/eslint-plugin-redwood" "^0.14.0"
     "@typescript-eslint/eslint-plugin" "^2.27.0"
     "@typescript-eslint/parser" "^2.27.0"
     babel-eslint "^10.1.0"
@@ -1821,15 +1821,15 @@
     eslint-plugin-react-hooks "^3.0.0"
     prettier "^2.0.5"
 
-"@redwoodjs/eslint-plugin-redwood@^0.13.1-canary.20+a556f2cb":
-  version "0.13.1-canary.20"
-  resolved "https://registry.yarnpkg.com/@redwoodjs/eslint-plugin-redwood/-/eslint-plugin-redwood-0.13.1-canary.20.tgz#35f658c41656c7388d6f58eb0ce2718ea8c8e2fa"
-  integrity sha512-p3nU2ets18VTtiqp8xv51FqsJjQCXLurNWTsg9EZj6ikqPUFLM2KsAyXd7Oz0uXZg3S4OYv1QypLWwtfATBgGQ==
+"@redwoodjs/eslint-plugin-redwood@^0.14.0":
+  version "0.14.0"
+  resolved "https://registry.yarnpkg.com/@redwoodjs/eslint-plugin-redwood/-/eslint-plugin-redwood-0.14.0.tgz#8cd49e151bd2e1621b1c7a72f6624c407082f25a"
+  integrity sha512-gyHEkW9322StO69k/2a8lmRrVZgVkdTDm7gxpfv0dzaGmng/UpCfpPv/ezTfrBP7ij7Cgd4LXufVYdstXojlDA==
 
-"@redwoodjs/internal@^0.13.1-canary.20+a556f2cb":
-  version "0.13.1-canary.20"
-  resolved "https://registry.yarnpkg.com/@redwoodjs/internal/-/internal-0.13.1-canary.20.tgz#2c07f7c3c26b395d97360a7229a7a74e104a04ff"
-  integrity sha512-9gwfY1a2mMcGqJ6uDreBnXiQy8fsHj8jmseqsuI3lMbqxP/5fdyOUaFc4hW3T91zu3L6qJDGWr2AAY7zHaKoTQ==
+"@redwoodjs/internal@^0.14.0":
+  version "0.14.0"
+  resolved "https://registry.yarnpkg.com/@redwoodjs/internal/-/internal-0.14.0.tgz#f8c05fae203b30ee04cc54f029e9a0ffe729e406"
+  integrity sha512-HYwH8+IJcUPVGV6J04ENDG9HMykGPmidC+QEe5lFT8meAL2wRQWOpg8tjd0/wHL2f/mMEPEcOw2FjNXaRSZu0A==
   dependencies:
     deepmerge "^4.2.2"
     findup-sync "^4.0.0"
@@ -1845,17 +1845,17 @@
     findup-sync "^4.0.0"
     toml "^3.0.0"
 
-"@redwoodjs/router@^0.13.1-canary.20":
-  version "0.13.1-canary.20"
-  resolved "https://registry.yarnpkg.com/@redwoodjs/router/-/router-0.13.1-canary.20.tgz#ce7cc3ac22adc42e4bf3b6452a4cbc596a07dec2"
-  integrity sha512-R3hmgL30c+Rl36gX2DIwQPjkDGeBuCYecfUKxFjHvK5DIRAwiDAy1FWwxvvRbMTgQoGIi30e0LP1QDWMO3H+Nw==
+"@redwoodjs/router@^0.14.0":
+  version "0.14.0"
+  resolved "https://registry.yarnpkg.com/@redwoodjs/router/-/router-0.14.0.tgz#89a1e7d8f23ba40f2a0fc2c670b856acd0323bcc"
+  integrity sha512-dxf7BxJUdGkwEpylKnyoQrp6VQYmG7/7eRj7cJTlWjBBW2I4liapDyk4so00Quxkl5lv6DbPWkns60pjbndorQ==
   dependencies:
     core-js "3.6.4"
 
-"@redwoodjs/structure@^0.13.1-canary.20+a556f2cb":
-  version "0.13.1-canary.20"
-  resolved "https://registry.yarnpkg.com/@redwoodjs/structure/-/structure-0.13.1-canary.20.tgz#a2d38871a03793c2dde160f18d4eacfa31b0df16"
-  integrity sha512-Wg+OWC3YwkPBLkH2JngUP9/wNa8iodkLXHoaY9ynMbwaVM5Kep2TOpqr8qQDt0rsaQiojv5oQQqTyuZHZVvb6Q==
+"@redwoodjs/structure@^0.14.0":
+  version "0.14.0"
+  resolved "https://registry.yarnpkg.com/@redwoodjs/structure/-/structure-0.14.0.tgz#273a64c94c45b49e1d91dc6711b6f003cdf94d24"
+  integrity sha512-GQPZHqLJXv6wz6n296D19wTX8v+Z+IMNyMbQS/cQgmPH7kOM9Rgxfvr4avf/tiY8sTUXbEwsm9ehcWe6i0k/Tg==
   dependencies:
     "@prisma/sdk" "^2.1.1"
     "@redwoodjs/internal" "^0.8.2"
@@ -1876,21 +1876,21 @@
     vscode-languageserver-types "^3.15.1"
     yargs-parser "^18.1.3"
 
-"@redwoodjs/testing@^0.13.1-canary.20+a556f2cb":
-  version "0.13.1-canary.20"
-  resolved "https://registry.yarnpkg.com/@redwoodjs/testing/-/testing-0.13.1-canary.20.tgz#9b0c41cc8d776da73f5b5dbd2c8c846d83a75fe2"
-  integrity sha512-I/244aAtWxmMPszmuTMGUft9pW6JR4PJjkeRSzDz62Q+yeRkgkTUTXhPcPEV5+w3zUDeCUwGLPT1sv/iKhk1wA==
+"@redwoodjs/testing@^0.14.0":
+  version "0.14.0"
+  resolved "https://registry.yarnpkg.com/@redwoodjs/testing/-/testing-0.14.0.tgz#f312e95a25653de1c5f365da34cae2f7b0eedc9a"
+  integrity sha512-rjorCs+4Duftq4pTSv7j1hU+oY9K0HLr7HsEE9OQh7hUXtyqc7zLhcWwDz6Qrmp5uHwUWJJf3XkXv21btmjyzw==
   dependencies:
-    "@redwoodjs/internal" "^0.13.1-canary.20+a556f2cb"
-    "@redwoodjs/web" "^0.13.1-canary.20+a556f2cb"
+    "@redwoodjs/internal" "^0.14.0"
+    "@redwoodjs/web" "^0.14.0"
     "@testing-library/react" "^10.0.4"
     "@types/react" "16.9.38"
     msw "^0.19.0"
 
-"@redwoodjs/web@^0.13.1-canary.20", "@redwoodjs/web@^0.13.1-canary.20+a556f2cb":
-  version "0.13.1-canary.20"
-  resolved "https://registry.yarnpkg.com/@redwoodjs/web/-/web-0.13.1-canary.20.tgz#e402b425e0f6f21517ea328e859c0d80ccaa6964"
-  integrity sha512-ciBscooCBSrH+g1FHHJwylFM/aRNCfvq218nbCXeggtHWiGF72612vl8wserFGFi30L7W+uklLYMQ8fa/ZZeRw==
+"@redwoodjs/web@^0.14.0":
+  version "0.14.0"
+  resolved "https://registry.yarnpkg.com/@redwoodjs/web/-/web-0.14.0.tgz#ffd3daabba06230c13fed2622dc123676b4ba1c9"
+  integrity sha512-8hLhSqE2ga8WmvxAmfIPBOD/yRNuK5o2V/8VRGzY4ckn8VJuLWM+p6KWWAJPt0lOuOmyIpx2B+S2Ab7xKtrB2w==
   dependencies:
     "@apollo/react-components" "^3.1.3"
     "@apollo/react-hooks" "^3.1.3"
