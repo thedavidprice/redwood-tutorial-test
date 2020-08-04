@@ -6,6 +6,9 @@ This is where the testing happens.
 ### Deployed on Netlify
 https://jovial-bohr-4ac134.netlify.com/
 
+### Deployed on Vercel
+TODO
+
 
 ## Getting Started
 - [Redwoodjs.com](https://redwoodjs.com): home to all things RedwoodJS.
