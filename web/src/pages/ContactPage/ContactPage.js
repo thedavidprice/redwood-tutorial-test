@@ -6,7 +6,7 @@ import {
   FieldError,
   Label,
   FormError,
-} from '@redwoodjs/web'
+} from '@redwoodjs/forms'
 import { useMutation } from '@redwoodjs/web'
 import BlogLayout from 'src/layouts/BlogLayout'
 import { useForm } from 'react-hook-form'

@@ -5,7 +5,7 @@ import {
   Label,
   TextField,
   Submit,
-} from '@redwoodjs/web'
+} from '@redwoodjs/forms'
 
 const PostForm = (props) => {
   const onSubmit = (data) => {
