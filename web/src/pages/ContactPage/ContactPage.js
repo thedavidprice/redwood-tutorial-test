@@ -7,23 +7,27 @@ import {
   Label,
   FormError,
 } from '@redwoodjs/forms'
-import { useMutation } from '@redwoodjs/web'
-import BlogLayout from 'src/layouts/BlogLayout'
+import { Flash, useFlash, useMutation } from '@redwoodjs/web'
 import { useForm } from 'react-hook-form'
+import BlogLayout from 'src/layouts/BlogLayout'
 
 const CREATE_CONTACT = gql`
-  mutation CreateContactMutation($input: ContactInput!) {
+  mutation CreateContactMutation($input: CreateContactInput!) {
     createContact(input: $input) {
       id
     }
   }
 `
 
-const ContactPage = (props) => {
+const ContactPage = () => {
   const formMethods = useForm()
+  const { addMessage } = useFlash()
+
   const [create, { loading, error }] = useMutation(CREATE_CONTACT, {
     onCompleted: () => {
-      alert('Thank you for your submission!')
+      addMessage('Thank you for your submission!', {
+        style: { backgroundColor: 'green', color: 'white', padding: '1rem' },
+      })
       formMethods.reset()
     },
   })
@@ -35,6 +39,7 @@ const ContactPage = (props) => {
 
   return (
     <BlogLayout>
+      <Flash timeout={1000} />
       <Form
         onSubmit={onSubmit}
         validation={{ mode: 'onBlur' }}
@@ -45,56 +50,39 @@ const ContactPage = (props) => {
           error={error}
           wrapperStyle={{ color: 'red', backgroundColor: 'lavenderblush' }}
         />
-        <Label
-          name="name"
-          style={{ display: 'block' }}
-          errorStyle={{ display: 'block', color: 'red' }}
-        >
+        <Label name="name" errorClassName="error">
           Name
         </Label>
         <TextField
           name="name"
-          style={{ display: 'block' }}
-          errorStyle={{ display: 'block', borderColor: 'red' }}
           validation={{ required: true }}
+          errorClassName="error"
         />
-        <FieldError name="name" style={{ color: 'red' }} />
+        <FieldError name="name" className="error" />
 
-        <Label
-          name="email"
-          style={{ display: 'block' }}
-          errorStyle={{ display: 'block', color: 'red' }}
-        >
+        <Label name="name" errorClassName="error">
           Email
         </Label>
         <TextField
           name="email"
-          style={{ display: 'block' }}
-          errorStyle={{ display: 'block', borderColor: 'red' }}
           validation={{
             required: true,
           }}
+          errorClassName="error"
         />
-        <FieldError name="email" style={{ color: 'red' }} />
+        <FieldError name="email" className="error" />
 
-        <Label
-          name="message"
-          style={{ display: 'block' }}
-          errorStyle={{ display: 'block', color: 'red' }}
-        >
+        <Label name="name" errorClassName="error">
           Message
         </Label>
         <TextAreaField
           name="message"
-          style={{ display: 'block' }}
-          errorStyle={{ display: 'block', borderColor: 'red' }}
           validation={{ required: true }}
+          errorClassName="error"
         />
-        <FieldError name="message" style={{ color: 'red' }} />
+        <FieldError name="message" className="error" />
 
-        <Submit style={{ display: 'block' }} disabled={loading}>
-          Save
-        </Submit>
+        <Submit disabled={loading}>Save</Submit>
       </Form>
     </BlogLayout>
   )
