@@ -43,7 +43,7 @@ Prisma2 is [not ready for production](https://isprisma2ready.com) at the moment.
 To create a development database:
 
 ```terminal
-yarn redwood db up
+yarn rw db up
 ```
 
 This will read the schema definition in `api/prisma/schema.prisma` and generate a sqlite database in `api/prisma/dev.db`
