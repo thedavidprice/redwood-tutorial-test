@@ -19,12 +19,20 @@ const truncate = (text) => {
   return output
 }
 
+const jsonTruncate = (obj) => {
+  return truncate(JSON.stringify(obj, null, 2))
+}
+
 const timeTag = (datetime) => {
   return (
     <time dateTime={datetime} title={datetime}>
       {new Date(datetime).toUTCString()}
     </time>
   )
+}
+
+const checkboxInputTag = (checked) => {
+  return <input type="checkbox" checked={checked} disabled />
 }
 
 const PostsList = ({ posts }) => {
@@ -46,10 +54,10 @@ const PostsList = ({ posts }) => {
       <table className="rw-table">
         <thead>
           <tr>
-            <th>id</th>
-            <th>title</th>
-            <th>body</th>
-            <th>createdAt</th>
+            <th>Id</th>
+            <th>Title</th>
+            <th>Body</th>
+            <th>Created at</th>
             <th>&nbsp;</th>
           </tr>
         </thead>

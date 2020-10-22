@@ -9,6 +9,26 @@ const DELETE_POST_MUTATION = gql`
   }
 `
 
+const jsonDisplay = (obj) => {
+  return (
+    <pre>
+      <code>{JSON.stringify(obj, null, 2)}</code>
+    </pre>
+  )
+}
+
+const timeTag = (datetime) => {
+  return (
+    <time dateTime={datetime} title={datetime}>
+      {new Date(datetime).toUTCString()}
+    </time>
+  )
+}
+
+const checkboxInputTag = (checked) => {
+  return <input type="checkbox" checked={checked} disabled />
+}
+
 const Post = ({ post }) => {
   const { addMessage } = useFlash()
   const [deletePost] = useMutation(DELETE_POST_MUTATION, {
@@ -35,20 +55,20 @@ const Post = ({ post }) => {
         <table className="rw-table">
           <tbody>
             <tr>
-              <th>id</th>
+              <th>Id</th>
               <td>{post.id}</td>
             </tr>
             <tr>
-              <th>title</th>
+              <th>Title</th>
               <td>{post.title}</td>
             </tr>
             <tr>
-              <th>body</th>
+              <th>Body</th>
               <td>{post.body}</td>
             </tr>
             <tr>
-              <th>createdAt</th>
-              <td>{post.createdAt}</td>
+              <th>Created at</th>
+              <td>{timeTag(post.createdAt)}</td>
             </tr>
           </tbody>
         </table>

@@ -11,6 +11,7 @@
   border-color: #e2e8f0;
 }
 .rw-scaffold main {
+  color: #4a5568;
   display: block;
 }
 .rw-scaffold h1,
@@ -237,6 +238,10 @@
   border-radius: 0.25rem;
   outline: none;
 }
+.rw-input[type='checkbox'] {
+  width: initial;
+  margin-left: 0;
+}
 .rw-input:focus {
   border-color: #a0aec0;
 }
@@ -293,6 +298,9 @@
 .rw-table tbody tr:nth-child(even) {
   background-color: #fff;
 }
+.rw-table input {
+  margin-left: 0;
+}
 .rw-table-actions {
   display: flex;
   justify-content: flex-end;
@@ -323,4 +331,16 @@
 }
 .rw-text-center {
   text-align: center;
+}
+.rw-slide-up {
+  animation: slideUp 0.5s 1 ease;
+  animation-fill-mode: forwards;
+  overflow-y: hidden;
+}
+@keyframes slideUp {
+  100% {
+    max-height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
