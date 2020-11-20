@@ -3,5 +3,6 @@
   apiProxyPath = "/api"
 [api]
   port = 8911
+  schemaPath = "./api/db/schema.prisma"
 [browser]
   open = true
