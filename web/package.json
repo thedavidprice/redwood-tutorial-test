@@ -13,11 +13,11 @@
     ]
   },
   "dependencies": {
-    "@redwoodjs/auth": "^0.20.1-canary.43",
-    "@redwoodjs/forms": "^0.20.1-canary.43",
-    "@redwoodjs/router": "^0.20.1-canary.43",
-    "@redwoodjs/web": "^0.20.1-canary.43",
-    "netlify-identity-widget": "^1.6.0",
+    "@redwoodjs/auth": "^0.21.1-canary.32",
+    "@redwoodjs/forms": "^0.21.1-canary.32",
+    "@redwoodjs/router": "^0.21.1-canary.32",
+    "@redwoodjs/web": "^0.21.1-canary.32",
+    "netlify-identity-widget": "^1.9.1",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
