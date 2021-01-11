@@ -1,34 +1,31 @@
-import { render, cleanup, screen } from '@testing-library/react'
-
+import { render, screen } from '@redwoodjs/testing'
 import { Loading, Empty, Failure, Success } from './BlogPostCell'
+import { standard } from './BlogPostCell.mock'
 
 describe('BlogPostCell', () => {
-  afterEach(() => {
-    cleanup()
+  test('Loading renders successfully', () => {
+    expect(() => {
+      render(<Loading />)
+    }).not.toThrow()
   })
 
-  it('Loading renders successfully', () => {
-    render(<Loading />)
-    // Use screen.debug() to see output.
-    expect(screen.queryByText('Loading...')).toBeInTheDocument()
+  test('Empty renders successfully', async () => {
+    expect(() => {
+      render(<Empty />)
+    }).not.toThrow()
   })
 
-  it('Empty renders successfully', () => {
-    render(<Empty />)
-    expect(screen.queryByText('Empty')).toBeInTheDocument()
+  test('Failure renders successfully', async () => {
+    expect(() => {
+      render(<Failure error={new Error('Oh no')} />)
+    }).not.toThrow()
   })
 
-  it('Failure renders successfully', () => {
-    render(<Failure error={{ message: 'Oh no!' }} />)
-    expect(screen.queryByText('Error: Oh no!')).toBeInTheDocument()
-  })
+  test('Success renders successfully', async () => {
+    const post = standard().post
+    render(<Success post={post} />)
 
-  it('Success renders successfully', () => {
-    render(
-      <Success userExample={{ blogPost: { objectKey: 'objectValue' } }} />
-    )
-    expect(
-      screen.queryByText('{"blogPost":{"objectKey":"objectValue"}}')
-    ).toBeInTheDocument()
+    expect(screen.getByText(post.title)).toBeInTheDocument()
+    expect(screen.getByText(post.body)).toBeInTheDocument()
   })
 })
