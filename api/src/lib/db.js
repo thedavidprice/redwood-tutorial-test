@@ -3,11 +3,7 @@
 
 import { PrismaClient } from '@prisma/client'
 
-export const db = new PrismaClient({
-  __internal: {
-    useUds: false,
-  },
-})
+export const db = new PrismaClient()
 
 // Using this as a workaround until Prisma has a chance to work on
 // https://github.com/prisma/prisma/issues/2152
