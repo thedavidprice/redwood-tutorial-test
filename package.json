@@ -7,8 +7,7 @@
     ]
   },
   "devDependencies": {
-    "@redwoodjs/cli": "https://rw-pr-redwoodjs-com.s3.amazonaws.com/1774/redwoodjs-cli-0.24.0-dc3fe26.tgz",
-    "@redwoodjs/core": "https://rw-pr-redwoodjs-com.s3.amazonaws.com/1774/redwoodjs-core-0.24.0-dc3fe26.tgz"
+    "@redwoodjs/core": "^0.24.1-canary.62"
   },
   "eslintConfig": {
     "extends": "@redwoodjs/eslint-config"

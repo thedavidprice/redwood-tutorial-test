@@ -13,10 +13,10 @@
     ]
   },
   "dependencies": {
-    "@redwoodjs/auth": "https://rw-pr-redwoodjs-com.s3.amazonaws.com/1774/redwoodjs-auth-0.24.0-dc3fe26.tgz",
-    "@redwoodjs/forms": "https://rw-pr-redwoodjs-com.s3.amazonaws.com/1774/redwoodjs-forms-0.24.0-dc3fe26.tgz",
-    "@redwoodjs/router": "https://rw-pr-redwoodjs-com.s3.amazonaws.com/1774/redwoodjs-router-0.24.0-dc3fe26.tgz",
-    "@redwoodjs/web": "https://rw-pr-redwoodjs-com.s3.amazonaws.com/1774/redwoodjs-web-0.24.0-dc3fe26.tgz",
+    "@redwoodjs/auth": "^0.24.1-canary.62",
+    "@redwoodjs/forms": "^0.24.1-canary.62",
+    "@redwoodjs/router": "^0.24.1-canary.62",
+    "@redwoodjs/web": "^0.24.1-canary.62",
     "netlify-identity-widget": "^1.9.1",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
