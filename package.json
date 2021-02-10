@@ -15,10 +15,5 @@
   "engines": {
     "node": ">=12",
     "yarn": ">=1.15"
-  },
-  "dependencies": {
-    "@prisma/cli": "^2.16.1",
-    "@prisma/client": "^2.16.1",
-    "@prisma/sdk": "^2.16.1"
   }
 }
