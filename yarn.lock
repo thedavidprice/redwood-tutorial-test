@@ -1749,13 +1749,6 @@
     schema-utils "^2.6.5"
     source-map "^0.7.3"
 
-"@prisma/cli@2.16.1":
-  version "2.16.1"
-  resolved "https://registry.yarnpkg.com/@prisma/cli/-/cli-2.16.1.tgz#28a849c3e793472857fe123c48bfb038f7e80362"
-  integrity sha512-nVw8gs+o6bZ1CbaYzKmPcy2I4MJcP7FW7/4PkLgvy9v3/EWd9CKfSUX9b6cMq3uK9Jxa5kTejwNQkLHnihzxrg==
-  dependencies:
-    "@prisma/engines" "2.16.1-1.8b74ad57aaf2cc6c155f382a18a8e3ba95aceb03"
-
 "@prisma/client@2.16.1":
   version "2.16.1"
   resolved "https://registry.yarnpkg.com/@prisma/client/-/client-2.16.1.tgz#3aed1506f4090734735d1036bfdaee997032e793"
@@ -1943,10 +1936,9 @@
     prop-types "^15.6.1"
     react-lifecycles-compat "^3.0.4"
 
-"@redwoodjs/api@^0.25.1":
+"@redwoodjs/api@https://rw-pr-redwoodjs-com.s3.amazonaws.com/1800/redwoodjs-api-0.25.1-37606a7.tgz":
   version "0.25.1"
-  resolved "https://registry.yarnpkg.com/@redwoodjs/api/-/api-0.25.1.tgz#8069c11a6030c5d663c49eb851f1faa19a7ff691"
-  integrity sha512-QBXAPQOMusze88unscj4ZBvilXlM4ty/A3rnKcLHqlkXvIB5kUP9RYCsAqnGfa+SHcQqK23FMC1PlQSJIw0SeQ==
+  resolved "https://rw-pr-redwoodjs-com.s3.amazonaws.com/1800/redwoodjs-api-0.25.1-37606a7.tgz#69dea5d7f1cd6aa782837b039be163b893a90b77"
   dependencies:
     "@graphql-tools/merge" "^6.2.4"
     "@prisma/client" "2.16.1"
@@ -1966,10 +1958,13 @@
   resolved "https://registry.yarnpkg.com/@redwoodjs/auth/-/auth-0.25.1.tgz#217c9bdbafc71f3f131371f038e7633c52db06de"
   integrity sha512-mTUSWAj9ENa9jp6bdg03cQ3pu/c6mWwiLqLlcr6oGh2TA2YPVRBA+Yucb7TYedGLSL89xm9iy95kMhlM4gFy4Q==
 
-"@redwoodjs/cli@^0.25.1":
+"@redwoodjs/auth@https://rw-pr-redwoodjs-com.s3.amazonaws.com/1800/redwoodjs-auth-0.25.1-37606a7.tgz":
   version "0.25.1"
-  resolved "https://registry.yarnpkg.com/@redwoodjs/cli/-/cli-0.25.1.tgz#3a5bf48641e5506c43aa4f925105bc9449ee6e99"
-  integrity sha512-WBfjz7+6uRyVQ1Q/fvlh3+fyN2zRFhn4z4vyevZC6dPkR4AP51oZmaHUIkS2/lsKBfWTv+7niveteZuhwzKB9A==
+  resolved "https://rw-pr-redwoodjs-com.s3.amazonaws.com/1800/redwoodjs-auth-0.25.1-37606a7.tgz#a2b1f59d067d629a9140b0bdfd76ab13c0293346"
+
+"@redwoodjs/cli@^0.25.1", "@redwoodjs/cli@https://rw-pr-redwoodjs-com.s3.amazonaws.com/1800/redwoodjs-cli-0.25.1-37606a7.tgz":
+  version "0.25.1"
+  resolved "https://rw-pr-redwoodjs-com.s3.amazonaws.com/1800/redwoodjs-cli-0.25.1-37606a7.tgz#e4197492cf2b80adda68721fc7151c6437fe5b8e"
   dependencies:
     "@prisma/sdk" "2.16.1"
     "@redwoodjs/internal" "^0.25.1"
@@ -1996,10 +1991,9 @@
     terminal-link "^2.1.1"
     yargs "^16.0.3"
 
-"@redwoodjs/core@^0.25.1":
+"@redwoodjs/core@https://rw-pr-redwoodjs-com.s3.amazonaws.com/1800/redwoodjs-core-0.25.1-37606a7.tgz":
   version "0.25.1"
-  resolved "https://registry.yarnpkg.com/@redwoodjs/core/-/core-0.25.1.tgz#f0007155faf8b74d6a1d17a48e67ac9f8a5ac8b4"
-  integrity sha512-h4cTL8mga7Z6OlBwL2uVlgz0fyEQMCr94I2cUezOdYseGO2JTRgIs8PHgg8S1Vr5FZ809kPVJXrtDnXjV3+pYg==
+  resolved "https://rw-pr-redwoodjs-com.s3.amazonaws.com/1800/redwoodjs-core-0.25.1-37606a7.tgz#228098ef7d562de8bec03ee7b23ffc14c9269f37"
   dependencies:
     "@babel/cli" "^7.11.6"
     "@babel/core" "^7.11.6"
@@ -2011,7 +2005,6 @@
     "@babel/preset-typescript" "^7.10.4"
     "@babel/runtime-corejs3" "^7.11.2"
     "@pmmmwh/react-refresh-webpack-plugin" "^0.4.3"
-    "@prisma/cli" "2.16.1"
     "@redwoodjs/cli" "^0.25.1"
     "@redwoodjs/dev-server" "^0.25.1"
     "@redwoodjs/eslint-config" "^0.25.1"
@@ -2044,6 +2037,7 @@
     lodash.escaperegexp "^4.1.2"
     mini-css-extract-plugin "^0.11.0"
     null-loader "^4.0.1"
+    prisma "2.16.1"
     react-refresh "^0.9.0"
     style-loader "^1.1.3"
     svg-react-loader "^0.4.6"
@@ -2110,6 +2104,15 @@
     pascalcase "1.0.0"
     react-hook-form "^6.9.5"
 
+"@redwoodjs/forms@https://rw-pr-redwoodjs-com.s3.amazonaws.com/1800/redwoodjs-forms-0.25.1-37606a7.tgz":
+  version "0.25.1"
+  resolved "https://rw-pr-redwoodjs-com.s3.amazonaws.com/1800/redwoodjs-forms-0.25.1-37606a7.tgz#3a2ba84196d872efba45ff91899a8501e86bc213"
+  dependencies:
+    "@types/pascalcase" "^1.0.0"
+    core-js "3.6.5"
+    pascalcase "1.0.0"
+    react-hook-form "^6.9.5"
+
 "@redwoodjs/internal@^0.25.1":
   version "0.25.1"
   resolved "https://registry.yarnpkg.com/@redwoodjs/internal/-/internal-0.25.1.tgz#5f79bf23d7132ae83d9a087d81376d27df259534"
@@ -2125,6 +2128,14 @@
   version "0.25.1"
   resolved "https://registry.yarnpkg.com/@redwoodjs/router/-/router-0.25.1.tgz#f1fb7b151b1762abc2f19b1ef47c5611fbf0c59b"
   integrity sha512-nrkYmVAj5cSl1JTxe7Lu/xU6pJBqVtZy1yHdftJHS3HMhWyE5fpMc7gPkrqKom2bMvEbM+ypdaZPEgjTFPpHIw==
+  dependencies:
+    "@redwoodjs/auth" "^0.25.1"
+    core-js "3.6.5"
+    lodash.isequal "^4.5.0"
+
+"@redwoodjs/router@https://rw-pr-redwoodjs-com.s3.amazonaws.com/1800/redwoodjs-router-0.25.1-37606a7.tgz":
+  version "0.25.1"
+  resolved "https://rw-pr-redwoodjs-com.s3.amazonaws.com/1800/redwoodjs-router-0.25.1-37606a7.tgz#02361f60246a98137e43f009441ae4169c075eb5"
   dependencies:
     "@redwoodjs/auth" "^0.25.1"
     core-js "3.6.5"
@@ -2174,6 +2185,16 @@
   version "0.25.1"
   resolved "https://registry.yarnpkg.com/@redwoodjs/web/-/web-0.25.1.tgz#0194b01e5271e7c961ef0f90a60ae8eec54c4e44"
   integrity sha512-ZMS86k3NUmC//WWRjm+TT5kFzCGlvJBhkr3ADKWc1glEttAmLg/4fn/T/Qgjkykqqy2BzoEgD9G5pIutRFiHqw==
+  dependencies:
+    "@apollo/client" "^3.2.5"
+    "@types/react" "16.9.53"
+    core-js "3.6.5"
+    graphql "^15.3.0"
+    proptypes "^1.1.0"
+
+"@redwoodjs/web@https://rw-pr-redwoodjs-com.s3.amazonaws.com/1800/redwoodjs-web-0.25.1-37606a7.tgz":
+  version "0.25.1"
+  resolved "https://rw-pr-redwoodjs-com.s3.amazonaws.com/1800/redwoodjs-web-0.25.1-37606a7.tgz#e3e7c20357be620abc2f344600c073e8d7265809"
   dependencies:
     "@apollo/client" "^3.2.5"
     "@types/react" "16.9.53"
@@ -11816,6 +11837,13 @@ prettysize@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/prettysize/-/prettysize-2.0.0.tgz#902c02480d865d9cc0813011c9feb4fa02ce6996"
   integrity sha512-VVtxR7sOh0VsG8o06Ttq5TrI1aiZKmC+ClSn4eBPaNf4SHr5lzbYW+kYGX3HocBL/MfpVrRfFZ9V3vCbLaiplg==
+
+prisma@2.16.1:
+  version "2.16.1"
+  resolved "https://registry.yarnpkg.com/prisma/-/prisma-2.16.1.tgz#cf73322e5426aabcd084a42dac89866006f5823f"
+  integrity sha512-TniTihl4xwWY7Hy+1UUpZ6jxHyriRDUW4i7TChZNBZM88IG8kvR5cSX+/JY/lzWGMUR4ZDBzoIuNcdPx/7eWag==
+  dependencies:
+    "@prisma/engines" "2.16.1-1.8b74ad57aaf2cc6c155f382a18a8e3ba95aceb03"
 
 prismjs@^1.8.4:
   version "1.23.0"
