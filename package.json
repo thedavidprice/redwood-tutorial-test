@@ -15,9 +15,5 @@
   "engines": {
     "node": ">=12",
     "yarn": ">=1.15"
-  },
-  "dependencies": {
-    "@redwoodjs/api": "^0.25.1",
-    "@redwoodjs/prerender": "^0.25.1"
   }
 }
