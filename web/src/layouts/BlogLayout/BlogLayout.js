@@ -1,6 +1,8 @@
 import { Link, routes } from '@redwoodjs/router'
 import { useAuth } from '@redwoodjs/auth'
 
+import Favicon from './favicon.png'
+
 const BlogLayout = ({ children }) => {
   const { logIn, logOut, isAuthenticated, currentUser } = useAuth()
 
@@ -8,7 +10,7 @@ const BlogLayout = ({ children }) => {
     <>
       <header>
         <h1>
-          <Link to={routes.home()}>Redwood Blog</Link>
+          <img src={Favicon} /> <Link to={routes.home()}>Redwood Blog</Link>
         </h1>
         <nav>
           <ul>
