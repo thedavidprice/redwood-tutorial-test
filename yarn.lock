@@ -1749,13 +1749,6 @@
     schema-utils "^2.6.5"
     source-map "^0.7.3"
 
-"@prisma/cli@2.16.1":
-  version "2.16.1"
-  resolved "https://registry.yarnpkg.com/@prisma/cli/-/cli-2.16.1.tgz#28a849c3e793472857fe123c48bfb038f7e80362"
-  integrity sha512-nVw8gs+o6bZ1CbaYzKmPcy2I4MJcP7FW7/4PkLgvy9v3/EWd9CKfSUX9b6cMq3uK9Jxa5kTejwNQkLHnihzxrg==
-  dependencies:
-    "@prisma/engines" "2.16.1-1.8b74ad57aaf2cc6c155f382a18a8e3ba95aceb03"
-
 "@prisma/client@2.16.1":
   version "2.16.1"
   resolved "https://registry.yarnpkg.com/@prisma/client/-/client-2.16.1.tgz#3aed1506f4090734735d1036bfdaee997032e793"
@@ -1943,10 +1936,9 @@
     prop-types "^15.6.1"
     react-lifecycles-compat "^3.0.4"
 
-"@redwoodjs/api@^0.25.1":
+"@redwoodjs/api@https://rw-pr-redwoodjs-com.s3.amazonaws.com/1721/redwoodjs-api-0.25.1-8399c31.tgz":
   version "0.25.1"
-  resolved "https://registry.yarnpkg.com/@redwoodjs/api/-/api-0.25.1.tgz#8069c11a6030c5d663c49eb851f1faa19a7ff691"
-  integrity sha512-QBXAPQOMusze88unscj4ZBvilXlM4ty/A3rnKcLHqlkXvIB5kUP9RYCsAqnGfa+SHcQqK23FMC1PlQSJIw0SeQ==
+  resolved "https://rw-pr-redwoodjs-com.s3.amazonaws.com/1721/redwoodjs-api-0.25.1-8399c31.tgz#de147c696b9fc9f165feafbb27067bf96a87dc01"
   dependencies:
     "@graphql-tools/merge" "^6.2.4"
     "@prisma/client" "2.16.1"
@@ -1965,6 +1957,10 @@
   version "0.25.1"
   resolved "https://registry.yarnpkg.com/@redwoodjs/auth/-/auth-0.25.1.tgz#217c9bdbafc71f3f131371f038e7633c52db06de"
   integrity sha512-mTUSWAj9ENa9jp6bdg03cQ3pu/c6mWwiLqLlcr6oGh2TA2YPVRBA+Yucb7TYedGLSL89xm9iy95kMhlM4gFy4Q==
+
+"@redwoodjs/auth@https://rw-pr-redwoodjs-com.s3.amazonaws.com/1721/redwoodjs-auth-0.25.1-8399c31.tgz":
+  version "0.25.1"
+  resolved "https://rw-pr-redwoodjs-com.s3.amazonaws.com/1721/redwoodjs-auth-0.25.1-8399c31.tgz#0e09cd3ef31e95b26fa13d4d28bb920ec77de9eb"
 
 "@redwoodjs/cli@^0.25.1":
   version "0.25.1"
@@ -1996,10 +1992,9 @@
     terminal-link "^2.1.1"
     yargs "^16.0.3"
 
-"@redwoodjs/core@^0.25.1":
+"@redwoodjs/core@https://rw-pr-redwoodjs-com.s3.amazonaws.com/1721/redwoodjs-core-0.25.1-8399c31.tgz":
   version "0.25.1"
-  resolved "https://registry.yarnpkg.com/@redwoodjs/core/-/core-0.25.1.tgz#f0007155faf8b74d6a1d17a48e67ac9f8a5ac8b4"
-  integrity sha512-h4cTL8mga7Z6OlBwL2uVlgz0fyEQMCr94I2cUezOdYseGO2JTRgIs8PHgg8S1Vr5FZ809kPVJXrtDnXjV3+pYg==
+  resolved "https://rw-pr-redwoodjs-com.s3.amazonaws.com/1721/redwoodjs-core-0.25.1-8399c31.tgz#082a2bb8891e07fd4694837b02dc1c19d344500f"
   dependencies:
     "@babel/cli" "^7.11.6"
     "@babel/core" "^7.11.6"
@@ -2011,7 +2006,6 @@
     "@babel/preset-typescript" "^7.10.4"
     "@babel/runtime-corejs3" "^7.11.2"
     "@pmmmwh/react-refresh-webpack-plugin" "^0.4.3"
-    "@prisma/cli" "2.16.1"
     "@redwoodjs/cli" "^0.25.1"
     "@redwoodjs/dev-server" "^0.25.1"
     "@redwoodjs/eslint-config" "^0.25.1"
@@ -2028,6 +2022,7 @@
     babel-loader "^8.1.0"
     babel-plugin-auto-import "^1.1.0"
     babel-plugin-graphql-tag "^3.0.0"
+    babel-plugin-inline-react-svg "^1.1.2"
     babel-plugin-module-resolver "^4.0.0"
     copy-webpack-plugin "^6.1.0"
     core-js "3.6.5"
@@ -2044,6 +2039,7 @@
     lodash.escaperegexp "^4.1.2"
     mini-css-extract-plugin "^0.11.0"
     null-loader "^4.0.1"
+    prisma "2.16.1"
     react-refresh "^0.9.0"
     style-loader "^1.1.3"
     svg-react-loader "^0.4.6"
@@ -2053,6 +2049,7 @@
     webpack-bundle-analyzer "^3.6.1"
     webpack-cli "^3.3.11"
     webpack-dev-server "^3.10.3"
+    webpack-manifest-plugin "^3.0.0"
     webpack-merge "^5.1.2"
     webpack-retry-chunk-load-plugin "^1.4.0"
     whatwg-fetch "^3.5.0"
@@ -2100,10 +2097,9 @@
   resolved "https://registry.yarnpkg.com/@redwoodjs/eslint-plugin-redwood/-/eslint-plugin-redwood-0.25.1.tgz#590946a627bc878412ed9fffa95cd410da04fafd"
   integrity sha512-/4KUfjY5eObKoh42RYpk9YEr9Z1+WSmo7oS3UDJtRAzj9MfKYiJUog0onay3YI0/ZQloBNRyVNuyLX70uVruVA==
 
-"@redwoodjs/forms@^0.25.1":
+"@redwoodjs/forms@https://rw-pr-redwoodjs-com.s3.amazonaws.com/1721/redwoodjs-forms-0.25.1-8399c31.tgz":
   version "0.25.1"
-  resolved "https://registry.yarnpkg.com/@redwoodjs/forms/-/forms-0.25.1.tgz#f87c999e3b56957ec30b7a2ac49171dc3a96d8e2"
-  integrity sha512-pMQmIkq4OwiC1fIIy2Jen86yRt+iGOfiaSPNxXkO8jca34Ns9NfIZNCghj58S04KQjE0/2U76j+c3PaxkGZ4Hg==
+  resolved "https://rw-pr-redwoodjs-com.s3.amazonaws.com/1721/redwoodjs-forms-0.25.1-8399c31.tgz#3a2ba84196d872efba45ff91899a8501e86bc213"
   dependencies:
     "@types/pascalcase" "^1.0.0"
     core-js "3.6.5"
@@ -2125,6 +2121,14 @@
   version "0.25.1"
   resolved "https://registry.yarnpkg.com/@redwoodjs/router/-/router-0.25.1.tgz#f1fb7b151b1762abc2f19b1ef47c5611fbf0c59b"
   integrity sha512-nrkYmVAj5cSl1JTxe7Lu/xU6pJBqVtZy1yHdftJHS3HMhWyE5fpMc7gPkrqKom2bMvEbM+ypdaZPEgjTFPpHIw==
+  dependencies:
+    "@redwoodjs/auth" "^0.25.1"
+    core-js "3.6.5"
+    lodash.isequal "^4.5.0"
+
+"@redwoodjs/router@https://rw-pr-redwoodjs-com.s3.amazonaws.com/1721/redwoodjs-router-0.25.1-8399c31.tgz":
+  version "0.25.1"
+  resolved "https://rw-pr-redwoodjs-com.s3.amazonaws.com/1721/redwoodjs-router-0.25.1-8399c31.tgz#44b1dcf91a8f7d6b063ccf3125e094259729f275"
   dependencies:
     "@redwoodjs/auth" "^0.25.1"
     core-js "3.6.5"
@@ -2176,6 +2180,17 @@
   integrity sha512-ZMS86k3NUmC//WWRjm+TT5kFzCGlvJBhkr3ADKWc1glEttAmLg/4fn/T/Qgjkykqqy2BzoEgD9G5pIutRFiHqw==
   dependencies:
     "@apollo/client" "^3.2.5"
+    "@types/react" "16.9.53"
+    core-js "3.6.5"
+    graphql "^15.3.0"
+    proptypes "^1.1.0"
+
+"@redwoodjs/web@https://rw-pr-redwoodjs-com.s3.amazonaws.com/1721/redwoodjs-web-0.25.1-8399c31.tgz":
+  version "0.25.1"
+  resolved "https://rw-pr-redwoodjs-com.s3.amazonaws.com/1721/redwoodjs-web-0.25.1-8399c31.tgz#6be2ab4d97058345e329577193052fcbe1343ee4"
+  dependencies:
+    "@apollo/client" "^3.2.5"
+    "@redwoodjs/auth" "^0.25.1"
     "@types/react" "16.9.53"
     core-js "3.6.5"
     graphql "^15.3.0"
@@ -4309,6 +4324,17 @@ babel-plugin-graphql-tag@^3.0.0:
     babel-literal-to-ast "^2.1.0"
     debug "^4.1.1"
 
+babel-plugin-inline-react-svg@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/babel-plugin-inline-react-svg/-/babel-plugin-inline-react-svg-1.1.2.tgz#f2090de7404982deaeb5d7ac9c16078a61ca6486"
+  integrity sha512-oDR/eraFbMtvg4bDxv4W8bQWTDxLVkKpIYKx0cey/J2QqFyogyQOvEz9SjSYmNK3jI+yZdVMAshTwkKnj6J/Aw==
+  dependencies:
+    "@babel/helper-plugin-utils" "^7.0.0"
+    "@babel/parser" "^7.0.0"
+    lodash.isplainobject "^4.0.6"
+    resolve "^1.10.0"
+    svgo "^0.7.2"
+
 babel-plugin-istanbul@^6.0.0:
   version "6.0.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-istanbul/-/babel-plugin-istanbul-6.0.0.tgz#e159ccdc9af95e0b570c75b4573b7c34d671d765"
@@ -5271,6 +5297,13 @@ cjs-module-lexer@^0.6.0:
   resolved "https://registry.yarnpkg.com/cjs-module-lexer/-/cjs-module-lexer-0.6.0.tgz#4186fcca0eae175970aee870b9fe2d6cf8d5655f"
   integrity sha512-uc2Vix1frTfnuzxxu1Hp4ktSvM3QaI4oXl4ZUqL1wjTu/BGki9TrCWoqLTg/drR1KwAEarXuRFCG2Svr1GxPFw==
 
+clap@^1.0.9:
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/clap/-/clap-1.2.3.tgz#4f36745b32008492557f46412d66d50cb99bce51"
+  integrity sha512-4CoL/A3hf90V3VIEjeuhSvlGFEHKzOz+Wfc2IVZc+FaUgU0ZQafJTP49fvnULipOPcAfqhyI2duwQyns6xqjYA==
+  dependencies:
+    chalk "^1.1.3"
+
 class-utils@^0.3.5:
   version "0.3.6"
   resolved "https://registry.yarnpkg.com/class-utils/-/class-utils-0.3.6.tgz#f93369ae8b9a7ce02fd41faad0ca83033190c463"
@@ -5423,6 +5456,13 @@ coa@^2.0.2:
     chalk "^2.4.1"
     q "^1.1.2"
 
+coa@~1.0.1:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/coa/-/coa-1.0.4.tgz#a9ef153660d6a86a8bdec0289a5c684d217432fd"
+  integrity sha1-qe8VNmDWqGqL3sAomlxoTSF0Mv0=
+  dependencies:
+    q "^1.1.2"
+
 code-block-writer@^10.1.0:
   version "10.1.1"
   resolved "https://registry.yarnpkg.com/code-block-writer/-/code-block-writer-10.1.1.tgz#ad5684ed4bfb2b0783c8b131281ae84ee640a42f"
@@ -5479,6 +5519,11 @@ colors@^1.1.2:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/colors/-/colors-1.4.0.tgz#c50491479d4c1bdaed2c9ced32cf7c7dc2360f78"
   integrity sha512-a+UqTh4kgZg/SlGvfbzDHpgRu7AAQOmmqRHJnxhRZICKFUT91brVhNNt58CMWU9PsBbv3PDCZUHbVxuDiH2mtA==
+
+colors@~1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/colors/-/colors-1.1.2.tgz#168a4701756b6a7f51a12ce0c97bfa28c084ed63"
+  integrity sha1-FopHAXVran9RoSzgyXv6KMCE7WM=
 
 combined-stream@^1.0.6, combined-stream@^1.0.8, combined-stream@~1.0.6:
   version "1.0.8"
@@ -5959,6 +6004,14 @@ csso@^4.0.2:
   integrity sha512-wvlcdIbf6pwKEk7vHj8/Bkc0B4ylXZruLvOgs9doS5eOsOpuodOV2zJChSpkp+pRpYQLQMeF04nr3Z68Sta9jA==
   dependencies:
     css-tree "^1.1.2"
+
+csso@~2.3.1:
+  version "2.3.2"
+  resolved "https://registry.yarnpkg.com/csso/-/csso-2.3.2.tgz#ddd52c587033f49e94b71fc55569f252e8ff5f85"
+  integrity sha1-3dUsWHAz9J6Utx/FVWnyUuj/X4U=
+  dependencies:
+    clap "^1.0.9"
+    source-map "^0.5.3"
 
 cssom@^0.4.4:
   version "0.4.4"
@@ -6940,6 +6993,11 @@ espree@^7.3.0, espree@^7.3.1:
     acorn "^7.4.0"
     acorn-jsx "^5.3.1"
     eslint-visitor-keys "^1.3.0"
+
+esprima@^2.6.0:
+  version "2.7.3"
+  resolved "https://registry.yarnpkg.com/esprima/-/esprima-2.7.3.tgz#96e3b70d5779f6ad49cd032673d1c312767ba581"
+  integrity sha1-luO3DVd59q1JzQMmc9HDEnZ7pYE=
 
 esprima@^4.0.0, esprima@^4.0.1:
   version "4.0.1"
@@ -9630,6 +9688,14 @@ js-yaml@^3.13.1:
     argparse "^1.0.7"
     esprima "^4.0.0"
 
+js-yaml@~3.7.0:
+  version "3.7.0"
+  resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.7.0.tgz#5c967ddd837a9bfdca5f2de84253abe8a1c03b80"
+  integrity sha1-XJZ93YN6m/3KXy3oQlOr6KHAO4A=
+  dependencies:
+    argparse "^1.0.7"
+    esprima "^2.6.0"
+
 jsbn@~0.1.0:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/jsbn/-/jsbn-0.1.1.tgz#a5e654c2e5a2deb5f201d96cefbca80c0ef2f513"
@@ -11817,6 +11883,13 @@ prettysize@^2.0.0:
   resolved "https://registry.yarnpkg.com/prettysize/-/prettysize-2.0.0.tgz#902c02480d865d9cc0813011c9feb4fa02ce6996"
   integrity sha512-VVtxR7sOh0VsG8o06Ttq5TrI1aiZKmC+ClSn4eBPaNf4SHr5lzbYW+kYGX3HocBL/MfpVrRfFZ9V3vCbLaiplg==
 
+prisma@2.16.1:
+  version "2.16.1"
+  resolved "https://registry.yarnpkg.com/prisma/-/prisma-2.16.1.tgz#cf73322e5426aabcd084a42dac89866006f5823f"
+  integrity sha512-TniTihl4xwWY7Hy+1UUpZ6jxHyriRDUW4i7TChZNBZM88IG8kvR5cSX+/JY/lzWGMUR4ZDBzoIuNcdPx/7eWag==
+  dependencies:
+    "@prisma/engines" "2.16.1-1.8b74ad57aaf2cc6c155f382a18a8e3ba95aceb03"
+
 prismjs@^1.8.4:
   version "1.23.0"
   resolved "https://registry.yarnpkg.com/prismjs/-/prismjs-1.23.0.tgz#d3b3967f7d72440690497652a9d40ff046067f33"
@@ -12789,7 +12862,7 @@ sane@^4.0.3:
     minimist "^1.1.1"
     walker "~1.0.5"
 
-sax@>=0.6.0, sax@~1.2.4:
+sax@>=0.6.0, sax@~1.2.1, sax@~1.2.4:
   version "1.2.4"
   resolved "https://registry.yarnpkg.com/sax/-/sax-1.2.4.tgz#2816234e2378bddc4e5354fab5caa895df7100d9"
   integrity sha512-NqVDv9TpANUjFm0N8uM5GxL36UgKi9/atZw+x7YFnQ8ckwFGKrl4xX4yWtrey3UJm5nP1kUbnYgLopqWNSRhWw==
@@ -13212,7 +13285,7 @@ sort-keys@^1.0.0:
   dependencies:
     is-plain-obj "^1.0.0"
 
-source-list-map@^2.0.0:
+source-list-map@^2.0.0, source-list-map@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/source-list-map/-/source-list-map-2.0.1.tgz#3993bd873bfc48479cca9ea3a547835c7c154b34"
   integrity sha512-qnQ7gVMxGNxsiL4lEuJwe/To8UnK7fAnmbGEEH8RpLouuKbeEm0lhbQVFIrNSuB+G7tVrAlVsZgETT5nljf+Iw==
@@ -13249,7 +13322,7 @@ source-map-url@^0.4.0:
   resolved "https://registry.yarnpkg.com/source-map-url/-/source-map-url-0.4.0.tgz#3e935d7ddd73631b97659956d55128e87b5084a3"
   integrity sha1-PpNdfd1zYxuXZZlW1VEo6HtQhKM=
 
-source-map@^0.5.0, source-map@^0.5.6, source-map@^0.5.7:
+source-map@^0.5.0, source-map@^0.5.3, source-map@^0.5.6, source-map@^0.5.7:
   version "0.5.7"
   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.5.7.tgz#8a039d2d1021d22d1ea14c80d8ea468ba2ef3fcc"
   integrity sha1-igOdLRAh0i0eoUyA2OpGi6LvP8w=
@@ -13713,6 +13786,19 @@ svg-react-loader@^0.4.6:
     traverse "0.6.6"
     xml2js "0.4.17"
 
+svgo@^0.7.2:
+  version "0.7.2"
+  resolved "https://registry.yarnpkg.com/svgo/-/svgo-0.7.2.tgz#9f5772413952135c6fefbf40afe6a4faa88b4bb5"
+  integrity sha1-n1dyQTlSE1xv779Ar+ak+qiLS7U=
+  dependencies:
+    coa "~1.0.1"
+    colors "~1.1.2"
+    csso "~2.3.1"
+    js-yaml "~3.7.0"
+    mkdirp "~0.5.1"
+    sax "~1.2.1"
+    whet.extend "~0.9.9"
+
 svgo@^1.2.2:
   version "1.3.2"
   resolved "https://registry.yarnpkg.com/svgo/-/svgo-1.3.2.tgz#b6dc511c063346c9e415b81e43401145b96d4167"
@@ -13779,6 +13865,11 @@ tapable@^1.0.0, tapable@^1.1.3:
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/tapable/-/tapable-1.1.3.tgz#a1fccc06b58db61fd7a45da2da44f5f3a3e67ba2"
   integrity sha512-4WK/bYZmj8xLr+HUCODHGF1ZFzsYffasLUgEiMBY4fgtltdO6B4WJtlSbPaDTLpYTcGVwM2qLnFTICEcNxs3kA==
+
+tapable@^2.0.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/tapable/-/tapable-2.2.0.tgz#5c373d281d9c672848213d0e037d1c4165ab426b"
+  integrity sha512-FBk4IesMV1rBxX2tfiK8RAmogtWn53puLOQlvO8XuwlgxcYbP4mVPS9Ph4aeamSyyVjOl24aYWAuc8U5kCVwMw==
 
 tar-stream@^2.1.2:
   version "2.2.0"
@@ -14734,6 +14825,14 @@ webpack-log@^2.0.0:
     ansi-colors "^3.0.0"
     uuid "^3.3.2"
 
+webpack-manifest-plugin@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/webpack-manifest-plugin/-/webpack-manifest-plugin-3.0.0.tgz#426644300e5dc41a75a9c996c4d4f876eb3c2b5b"
+  integrity sha512-nbORTdky2HxD8XSaaT+zrsHb30AAgyWAWgCLWaAeQO21VGCScGb52ipqlHA/njix1Z8OW8IOlo4+XK0OKr1fkw==
+  dependencies:
+    tapable "^2.0.0"
+    webpack-sources "^2.2.0"
+
 webpack-merge@^5.1.2:
   version "5.7.3"
   resolved "https://registry.yarnpkg.com/webpack-merge/-/webpack-merge-5.7.3.tgz#2a0754e1877a25a8bbab3d2475ca70a052708213"
@@ -14756,6 +14855,14 @@ webpack-sources@^1.1.0, webpack-sources@^1.4.0, webpack-sources@^1.4.1, webpack-
   dependencies:
     source-list-map "^2.0.0"
     source-map "~0.6.1"
+
+webpack-sources@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/webpack-sources/-/webpack-sources-2.2.0.tgz#058926f39e3d443193b6c31547229806ffd02bac"
+  integrity sha512-bQsA24JLwcnWGArOKUxYKhX3Mz/nK1Xf6hxullKERyktjNMC4x8koOeaDNTA2fEJ09BdWLbM/iTW0ithREUP0w==
+  dependencies:
+    source-list-map "^2.0.1"
+    source-map "^0.6.1"
 
 webpack-virtual-modules@^0.2.0:
   version "0.2.2"
@@ -14832,6 +14939,11 @@ whatwg-url@^8.0.0:
     lodash.sortby "^4.7.0"
     tr46 "^2.0.2"
     webidl-conversions "^6.1.0"
+
+whet.extend@~0.9.9:
+  version "0.9.9"
+  resolved "https://registry.yarnpkg.com/whet.extend/-/whet.extend-0.9.9.tgz#f877d5bf648c97e5aa542fadc16d6a259b9c11a1"
+  integrity sha1-+HfVv2SMl+WqVC+twW1qJZucEaE=
 
 which-module@^2.0.0:
   version "2.0.0"

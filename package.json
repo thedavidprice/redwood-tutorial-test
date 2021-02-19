@@ -7,7 +7,7 @@
     ]
   },
   "devDependencies": {
-    "@redwoodjs/core": "^0.25.1"
+    "@redwoodjs/core": "https://rw-pr-redwoodjs-com.s3.amazonaws.com/1721/redwoodjs-core-0.25.1-8399c31.tgz"
   },
   "eslintConfig": {
     "extends": "@redwoodjs/eslint-config"
