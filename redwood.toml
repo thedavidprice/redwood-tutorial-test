@@ -1,6 +1,7 @@
 [web]
   port = 8910
   apiProxyPath = "/.netlify/functions"
+  experimentalPrerender = true
 [api]
   port = 8911
   schemaPath = "./api/db/schema.prisma"
