@@ -1,7 +1,6 @@
 [web]
   port = 8910
   apiProxyPath = "/api"
-  experimentalPrerender = true
 [api]
   port = 8911
   schemaPath = "./api/db/schema.prisma"
