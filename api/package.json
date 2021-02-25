@@ -3,6 +3,6 @@
   "version": "0.0.0",
   "private": true,
   "dependencies": {
-    "@redwoodjs/api": "https://rw-pr-redwoodjs-com.s3.amazonaws.com/1800/redwoodjs-api-0.25.1-37606a7.tgz"
+    "@redwoodjs/api": "^0.25.2-canary.35"
   }
 }

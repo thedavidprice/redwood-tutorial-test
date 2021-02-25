@@ -24,7 +24,7 @@ const Routes = () => {
         <Route path="/admin/posts/{id:Int}" page={PostPage} name="post" />
         <Route path="/admin/posts" page={PostsPage} name="posts" />
       </Private>
-      <Route path="/about" page={AboutPage} name="about" />
+      <Route path="/about" page={AboutPage} name="about" prerender />
       <Route path="/" page={HomePage} name="home" />
       <Route notfound page={NotFoundPage} />
     </Router>
