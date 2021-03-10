@@ -3,17 +3,23 @@
   "workspaces": {
     "packages": [
       "api",
-      "web"
+      "web",
+      "packages/*"
     ]
   },
   "devDependencies": {
-    "@redwoodjs/core": "^0.26.2"
+    "@redwoodjs/core": "^0.26.3-canary.23"
   },
   "eslintConfig": {
-    "extends": "@redwoodjs/eslint-config"
+    "extends": "@redwoodjs/eslint-config",
+    "root": true
   },
   "engines": {
     "node": ">=14",
     "yarn": ">=1.15"
+  },
+  "resolutions": {
+    "react": "17.0.1",
+    "react-dom": "17.0.1"
   }
 }
