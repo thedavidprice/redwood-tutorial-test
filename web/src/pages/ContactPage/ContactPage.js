@@ -7,9 +7,9 @@ import {
   Label,
   FormError,
 } from '@redwoodjs/forms'
-import { Flash, useFlash, useMutation } from '@redwoodjs/web'
+import { useMutation } from '@redwoodjs/web'
+import { toast, Toaster } from '@redwoodjs/web/toast'
 import { useForm } from 'react-hook-form'
-import BlogLayout from 'src/layouts/BlogLayout'
 
 const CREATE_CONTACT = gql`
   mutation CreateContactMutation($input: CreateContactInput!) {
@@ -21,13 +21,10 @@ const CREATE_CONTACT = gql`
 
 const ContactPage = () => {
   const formMethods = useForm()
-  const { addMessage } = useFlash()
 
   const [create, { loading, error }] = useMutation(CREATE_CONTACT, {
     onCompleted: () => {
-      addMessage('Thank you for your submission!', {
-        style: { backgroundColor: 'green', color: 'white', padding: '1rem' },
-      })
+      toast.success('Thank you for your submission!')
       formMethods.reset()
     },
   })
@@ -38,8 +35,8 @@ const ContactPage = () => {
   }
 
   return (
-    <BlogLayout>
-      <Flash timeout={1000} />
+    <>
+      <Toaster />
       <Form
         onSubmit={onSubmit}
         validation={{ mode: 'onBlur' }}
@@ -60,7 +57,7 @@ const ContactPage = () => {
         />
         <FieldError name="name" className="error" />
 
-        <Label name="name" errorClassName="error">
+        <Label name="email" errorClassName="error">
           Email
         </Label>
         <TextField
@@ -72,7 +69,7 @@ const ContactPage = () => {
         />
         <FieldError name="email" className="error" />
 
-        <Label name="name" errorClassName="error">
+        <Label name="message" errorClassName="error">
           Message
         </Label>
         <TextAreaField
@@ -84,7 +81,7 @@ const ContactPage = () => {
 
         <Submit disabled={loading}>Save</Submit>
       </Form>
-    </BlogLayout>
+    </>
   )
 }
 
