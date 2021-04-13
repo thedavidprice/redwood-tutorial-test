@@ -1,0 +1,34 @@
+services:
+- type: web
+  name: tdp-tutorial-blog-test-web
+  env: static
+  buildCommand: yarn rw deploy render web
+  staticPublishPath: ./web/dist
+  envVars:
+  - key: NODE_VERSION
+    value: 14
+  routes:
+  - type: rewrite
+    source: /.redwood/functions/*
+# replace destination api url after first deploy to Render
+    destination: replace_me_with_api_url/*
+  - type: rewrite
+    source: /*
+    destination: /index.html
+
+- type: web
+  name: tdp-tutorial-blog-test-api
+  env: node
+  buildCommand: yarn rw deploy render api
+  startCommand: yarn rw serve api
+  envVars:
+  - key: NODE_VERSION
+    value: 14
+  - key: DATABASE_URL
+    fromDatabase:
+      name: tdp-tutorial-blog-test-db
+      property: connectionString
+
+databases:
+  - name: tdp-tutorial-blog-test-db
+
