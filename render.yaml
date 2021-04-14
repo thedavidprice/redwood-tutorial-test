@@ -10,8 +10,7 @@ services:
   routes:
   - type: rewrite
     source: /.redwood/functions/*
-# replace destination api url after first deploy to Render
-    destination: replace_me_with_api_url/*
+    destination: https://tdp-tutorial-blog-test-api.onrender.com/*
   - type: rewrite
     source: /*
     destination: /index.html
