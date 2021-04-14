@@ -18,7 +18,7 @@ services:
 - type: web
   name: tdp-tutorial-blog-test-api
   env: node
-  buildCommand: yarn rw deploy render api
+  buildCommand: yarn & yarn rw deploy render api
   startCommand: yarn rw serve api
   envVars:
   - key: NODE_VERSION

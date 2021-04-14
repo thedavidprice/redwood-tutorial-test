@@ -8,7 +8,8 @@
     ]
   },
   "devDependencies": {
-    "@redwoodjs/core": "^0.29.0"
+    "@redwoodjs/cli": "https://rw-pr-redwoodjs-com.s3.amazonaws.com/2099/redwoodjs-cli-0.29.0-3a7f30e.tgz",
+    "@redwoodjs/core": "https://rw-pr-redwoodjs-com.s3.amazonaws.com/2099/redwoodjs-core-0.29.0-3a7f30e.tgz"
   },
   "eslintConfig": {
     "extends": "@redwoodjs/eslint-config",
