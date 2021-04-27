@@ -8,7 +8,6 @@
     ]
   },
   "devDependencies": {
-    "@redwoodjs/cli": "^0.30.2-canary.42",
     "@redwoodjs/core": "^0.30.2-canary.42"
   },
   "eslintConfig": {
