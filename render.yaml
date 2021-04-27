@@ -1,5 +1,11 @@
+#####
+# Documentation
+# Redwood: https://render.com/docs/deploy-redwood
+# YAML (all config values): https://render.com/docs/yaml-spec
+#####
+
 services:
-- name: tdp-tutorial-blog-test-web
+- name: tdp-redwood-tutorial-test-web
   type: web
   env: static
   buildCommand: yarn rw deploy render web
@@ -10,17 +16,22 @@ services:
   routes:
   - type: rewrite
     source: /.redwood/functions/*
-# replace destination api url after first deploy to Render
-    destination: https://tdp-tutorial-blog-test-api.onrender.com/*
+#####
+# NOTE: replace destination api url after first deploy to Render
+# example:
+#   destination: https://myredwoodproject-api.onrender.com/*
+#####
+    destination: replace_with_api_url/*
   - type: rewrite
     source: /*
     destination: /index.html
 
-- name: tdp-tutorial-blog-test-api
+- name: tdp-redwood-tutorial-test-api
   type: web
   env: node
-  buildCommand: yarn && yarn rw deploy render api
-  startCommand: yarn rw serve api
+  region: oregon
+  buildCommand: yarn && yarn rw build api
+  startCommand: yarn rw deploy render api
   envVars:
   - key: NODE_VERSION
     value: 14
