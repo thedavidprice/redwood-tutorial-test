@@ -21,7 +21,7 @@ services:
 # example:
 #   destination: https://myredwoodproject-api.onrender.com/*
 #####
-    destination: replace_with_api_url/*
+    destination: https://tdp-redwood-tutorial-test-api-r3h6.onrender.com/*
   - type: rewrite
     source: /*
     destination: /index.html
