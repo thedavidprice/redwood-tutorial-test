@@ -1,5 +1,4 @@
-datasource DS {
-  // example: provider = "sqlite" | "postgresql"
+datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
