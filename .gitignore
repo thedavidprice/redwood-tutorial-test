@@ -8,3 +8,4 @@ dist-babel
 node_modules
 yarn-error.log
 redwood/*
+web/public/mockServiceWorker.js
