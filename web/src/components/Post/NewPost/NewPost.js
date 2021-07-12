@@ -1,8 +1,7 @@
-import { useMutation, useFlash } from '@redwoodjs/web'
+import { useMutation } from '@redwoodjs/web'
+import { toast } from '@redwoodjs/web/toast'
 import { navigate, routes } from '@redwoodjs/router'
-import PostForm from 'src/components/PostForm'
-
-import { QUERY } from 'src/components/PostsCell'
+import PostForm from 'src/components/Post/PostForm'
 
 const CREATE_POST_MUTATION = gql`
   mutation CreatePostMutation($input: CreatePostInput!) {
@@ -13,17 +12,11 @@ const CREATE_POST_MUTATION = gql`
 `
 
 const NewPost = () => {
-  const { addMessage } = useFlash()
   const [createPost, { loading, error }] = useMutation(CREATE_POST_MUTATION, {
     onCompleted: () => {
+      toast.success('Post created')
       navigate(routes.posts())
-      addMessage('Post created.', { classes: 'rw-flash-success' })
     },
-    // This refetches the query on the list page. Read more about other ways to
-    // update the cache over here:
-    // https://www.apollographql.com/docs/react/data/mutations/#making-all-other-cache-updates
-    refetchQueries: [{ query: QUERY }],
-    awaitRefetchQueries: true,
   })
 
   const onSave = (input) => {
