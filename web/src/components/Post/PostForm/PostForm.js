@@ -7,6 +7,12 @@ import {
   Submit,
 } from '@redwoodjs/forms'
 
+const formatDatetime = (value) => {
+  if (value) {
+    return value.replace(/:\d{2}\.\d{3}\w/, '')
+  }
+}
+
 const PostForm = (props) => {
   const onSubmit = (data) => {
     props.onSave(data, props?.post?.id)
@@ -36,6 +42,7 @@ const PostForm = (props) => {
           errorClassName="rw-input rw-input-error"
           validation={{ required: true }}
         />
+
         <FieldError name="title" className="rw-field-error" />
 
         <Label
@@ -52,6 +59,7 @@ const PostForm = (props) => {
           errorClassName="rw-input rw-input-error"
           validation={{ required: true }}
         />
+
         <FieldError name="body" className="rw-field-error" />
 
         <div className="rw-button-group">
