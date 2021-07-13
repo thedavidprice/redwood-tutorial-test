@@ -2476,10 +2476,10 @@
     tiny-warning "^1.0.3"
     tslib "^2.3.0"
 
-"@redwoodjs/api-server@^0.35.0-rc.56+f9742c78e":
-  version "0.35.0-rc.56"
-  resolved "https://registry.yarnpkg.com/@redwoodjs/api-server/-/api-server-0.35.0-rc.56.tgz#2584203531df101e54d4a4116a56761add0582ce"
-  integrity sha512-gwJaT+iIE7vHpcyQE5ilGMcwT1xWiqIf6yH5Wj45I/IlQfXq3rLDR9kT/Fw0mnSAotzIyEucKsMmJQycCKP4yA==
+"@redwoodjs/api-server@0.35.0":
+  version "0.35.0"
+  resolved "https://registry.yarnpkg.com/@redwoodjs/api-server/-/api-server-0.35.0.tgz#c5966d878040a28ecbbf7adf25da3e796b0a2d76"
+  integrity sha512-zw+gXNmyYeoAaDfGf03p6zPOZCHRhLsoYW/UzDb4GSNVadMnd+Qz7j2d2+kfkeD96y9eb0tlMGPWoVWcWIgNyw==
   dependencies:
     body-parser "1.19.0"
     chokidar "3.5.2"
@@ -2494,10 +2494,10 @@
     youch "2.2.2"
     youch-terminal "1.1.1"
 
-"@redwoodjs/api@0.35.0-rc.56":
-  version "0.35.0-rc.56"
-  resolved "https://registry.yarnpkg.com/@redwoodjs/api/-/api-0.35.0-rc.56.tgz#274fc358cd9af5efdb7c37ab832f813684da7540"
-  integrity sha512-8p09dbzjoAZYgJwIXrtno0ddtePaE/Z6YsqRUjMDsKft9k/9WC1PIz0NgIHwHP+7M3ZWDBTSbUVQ0/f5yJg0Gw==
+"@redwoodjs/api@^0.35.0":
+  version "0.35.0"
+  resolved "https://registry.yarnpkg.com/@redwoodjs/api/-/api-0.35.0.tgz#60db9eb0f70ba0fdc521697d736b122eec112f57"
+  integrity sha512-var4R7f5mrLzZhHjrcBu2l1CH5W+gH9ioVH/4hAcmEP1rCdqPBRUW1WzOdKO8/bWqmt61IevgRLOgR8wMBgRlA==
   dependencies:
     "@graphql-tools/merge" "6.2.14"
     "@prisma/client" "2.26.0"
@@ -2516,22 +2516,22 @@
     pino-pretty "5.1.0"
     uuid "8.3.2"
 
-"@redwoodjs/auth@0.35.0-rc.56", "@redwoodjs/auth@^0.35.0-rc.56+f9742c78e":
-  version "0.35.0-rc.56"
-  resolved "https://registry.yarnpkg.com/@redwoodjs/auth/-/auth-0.35.0-rc.56.tgz#fe36164b6a1364a973d664c3cf87be8e533b83f2"
-  integrity sha512-/iWQ7MLuVVUOeU8pfIxe4GJ443lbcg9N03C0OIhrAd0vrjU5u2MSJaISn4uUjzXJkMO6LkNVnmHfYR28jtifag==
+"@redwoodjs/auth@0.35.0", "@redwoodjs/auth@^0.35.0":
+  version "0.35.0"
+  resolved "https://registry.yarnpkg.com/@redwoodjs/auth/-/auth-0.35.0.tgz#e558f5155c6f504aa82e425ea164f932eaf906e6"
+  integrity sha512-i7Rwe8oEMGfnozjWs/bM0q993FWWT+JhFtJRlwGaj4g9bLAbDpl8LV0MQX+5V6+TIfHjRIS65OaVi19vDEwVEA==
 
-"@redwoodjs/cli@^0.35.0-rc.56+f9742c78e":
-  version "0.35.0-rc.56"
-  resolved "https://registry.yarnpkg.com/@redwoodjs/cli/-/cli-0.35.0-rc.56.tgz#50d01bf0dd963d5fed3164baab6e39cbc1660be4"
-  integrity sha512-hfjmh4tuq+Y3c9E+gW+KWrPamW6fKVi9YXdWZIbkqOYNM8aeDApZrwDqfBEhEXW6iPwyaHZ56RvEseTyq5ynIw==
+"@redwoodjs/cli@0.35.0":
+  version "0.35.0"
+  resolved "https://registry.yarnpkg.com/@redwoodjs/cli/-/cli-0.35.0.tgz#13bbf18c183d216ce55266922910f26abbe342ab"
+  integrity sha512-H/Pkv9z3+uE/QFvk+/fatIzFoo1rvwDbG4T3tDkqHssjPcDAUvRFdkKMHIamX3y8ML8RKVm3eGVgJ3s+D30vAg==
   dependencies:
     "@prisma/sdk" "2.26.0"
-    "@redwoodjs/api-server" "^0.35.0-rc.56+f9742c78e"
-    "@redwoodjs/dev-server" "^0.35.0-rc.56+f9742c78e"
-    "@redwoodjs/internal" "^0.35.0-rc.56+f9742c78e"
-    "@redwoodjs/prerender" "^0.35.0-rc.56+f9742c78e"
-    "@redwoodjs/structure" "^0.35.0-rc.56+f9742c78e"
+    "@redwoodjs/api-server" "0.35.0"
+    "@redwoodjs/dev-server" "0.35.0"
+    "@redwoodjs/internal" "0.35.0"
+    "@redwoodjs/prerender" "0.35.0"
+    "@redwoodjs/structure" "0.35.0"
     boxen "5.0.1"
     camelcase "6.0.0"
     chalk "4.1.1"
@@ -2559,10 +2559,10 @@
     terminal-link "2.1.1"
     yargs "16.0.3"
 
-"@redwoodjs/core@0.35.0-rc.56":
-  version "0.35.0-rc.56"
-  resolved "https://registry.yarnpkg.com/@redwoodjs/core/-/core-0.35.0-rc.56.tgz#4a3267fabdbf5c81aba7fc84b68c59e45e5305fe"
-  integrity sha512-QWwSALRimwQxL4n00uwsmuv/MrnHNSeqQks8ttspcTs7KENUtF42vqNimRtEbMSmtLqmrpAGy67L8A5lH0ZRag==
+"@redwoodjs/core@^0.35.0":
+  version "0.35.0"
+  resolved "https://registry.yarnpkg.com/@redwoodjs/core/-/core-0.35.0.tgz#084c97dbda24b7e37c754ca11125e4bc0abb2079"
+  integrity sha512-7RhAggsUSbUPxzGDGAjP+UfQAA/i3YduCll+IRVJ9yDpewao9rjBBcLXpLdTZ8PyWaHbL/SpzI6hZjYf/d/FkQ==
   dependencies:
     "@babel/cli" "7.14.3"
     "@babel/core" "7.14.3"
@@ -2576,10 +2576,10 @@
     "@babel/preset-typescript" "7.14.5"
     "@babel/runtime-corejs3" "7.14.0"
     "@pmmmwh/react-refresh-webpack-plugin" "0.4.3"
-    "@redwoodjs/cli" "^0.35.0-rc.56+f9742c78e"
-    "@redwoodjs/eslint-config" "^0.35.0-rc.56+f9742c78e"
-    "@redwoodjs/internal" "^0.35.0-rc.56+f9742c78e"
-    "@redwoodjs/testing" "^0.35.0-rc.56+f9742c78e"
+    "@redwoodjs/cli" "0.35.0"
+    "@redwoodjs/eslint-config" "0.35.0"
+    "@redwoodjs/internal" "0.35.0"
+    "@redwoodjs/testing" "0.35.0"
     babel-loader "8.2.2"
     babel-plugin-auto-import "1.1.0"
     babel-plugin-graphql-tag "3.3.0"
@@ -2618,13 +2618,13 @@
     webpack-retry-chunk-load-plugin "1.4.0"
     x----x----x "^0 Webpack"
 
-"@redwoodjs/dev-server@^0.35.0-rc.56+f9742c78e":
-  version "0.35.0-rc.56"
-  resolved "https://registry.yarnpkg.com/@redwoodjs/dev-server/-/dev-server-0.35.0-rc.56.tgz#6136c0104a93ae2088c72e256680c3a9bb606735"
-  integrity sha512-zzPeC2LrLbCtKAQfqIlRWbBF8bfgoAnnS6Z3nQO0WvuWv7HaWO2F2SwxENKBq0tTsdqaBsyQffCJJQZhY0Ri3Q==
+"@redwoodjs/dev-server@0.35.0":
+  version "0.35.0"
+  resolved "https://registry.yarnpkg.com/@redwoodjs/dev-server/-/dev-server-0.35.0.tgz#60f9820afbbdf68bba5cf405e523e48f76367946"
+  integrity sha512-xhuaU3g1btcmdO8Yzzw8j/VWXWKzB9322jN2dFcb95kiN5RQuXJavBVmdlc6WIBjGA22caJVA+r+e6CbtEomyQ==
   dependencies:
     "@babel/register" "7.13.16"
-    "@redwoodjs/internal" "^0.35.0-rc.56+f9742c78e"
+    "@redwoodjs/internal" "0.35.0"
     body-parser "1.19.0"
     chokidar "3.5.2"
     express "4.17.1"
@@ -2635,10 +2635,10 @@
     youch "2.2.2"
     youch-terminal "1.1.1"
 
-"@redwoodjs/eslint-config@^0.35.0-rc.56+f9742c78e":
-  version "0.35.0-rc.56"
-  resolved "https://registry.yarnpkg.com/@redwoodjs/eslint-config/-/eslint-config-0.35.0-rc.56.tgz#cb6e3223329beca09243c8412b3f805d29b2a6a4"
-  integrity sha512-cgR77ZBSI+Y+UdK6L6Powt9wgWnf2haSoZ/vMWe9+mmkqr0Si1xFPKF2FNBvOGOnUbQvPiExSdC3gF0nmzy43A==
+"@redwoodjs/eslint-config@0.35.0":
+  version "0.35.0"
+  resolved "https://registry.yarnpkg.com/@redwoodjs/eslint-config/-/eslint-config-0.35.0.tgz#edf6a11d243e380c355513f91827e2bd93b77690"
+  integrity sha512-7zyueu2MByBJH368d4PdDkmbLRuAcsk4xkC/JOmwOEM66gTsLg6YozcidwCpqujcQu2AffRWxiXj4ZnJahhZRw==
   dependencies:
     "@typescript-eslint/eslint-plugin" "4.28.2"
     "@typescript-eslint/parser" "4.28.2"
@@ -2655,20 +2655,20 @@
     eslint-plugin-react-hooks "4.2.0"
     prettier "2.3.0"
 
-"@redwoodjs/forms@0.35.0-rc.56":
-  version "0.35.0-rc.56"
-  resolved "https://registry.yarnpkg.com/@redwoodjs/forms/-/forms-0.35.0-rc.56.tgz#6863f45982f40dbd7f1205725f3cb7b2d65e7263"
-  integrity sha512-VR4y5wpUoIF4R46aXSqg7iCT/zwayqtwP2cjgViCZt7r9Jc8B5VVIDUZQBZYfL8L5vZnRWyUnCZZvv54+kcFUQ==
+"@redwoodjs/forms@^0.35.0":
+  version "0.35.0"
+  resolved "https://registry.yarnpkg.com/@redwoodjs/forms/-/forms-0.35.0.tgz#2185f3759a2e72560d8cccd1c0f7f4210786ec94"
+  integrity sha512-4kuE0iO+ojR1Fqy+y6ZuLesw1099aJMJlMHcpRqiHKyrUeMfaEU7ChRZLNCPcQv7Da70pTfDyR4OwQ/HEhRI5Q==
   dependencies:
     "@types/pascalcase" "1.0.0"
     core-js "3.15.2"
     pascalcase "1.0.0"
     react-hook-form "6.9.5"
 
-"@redwoodjs/internal@^0.35.0-rc.56+f9742c78e":
-  version "0.35.0-rc.56"
-  resolved "https://registry.yarnpkg.com/@redwoodjs/internal/-/internal-0.35.0-rc.56.tgz#9b29028a485e6e4d20161df41461df3555793df9"
-  integrity sha512-x4k1upYYgpdtcIbsU/CEj53oZaqC74vdX//RImXG2ocQJf9/ZoC0z50WkdD5idGU6ade7bxbe0hbDZvAKLWUtA==
+"@redwoodjs/internal@0.35.0":
+  version "0.35.0"
+  resolved "https://registry.yarnpkg.com/@redwoodjs/internal/-/internal-0.35.0.tgz#220442f9bd9e98067e21c3f0ff94bf38661d9629"
+  integrity sha512-VEAMl69oY3gOR7Akl5K964lYj8bFBjh3Ur1Pd6nce0AJL6kHm7T8pf3H+qq9JQgIm+yxBAyyW8RfkbO2XHmQIA==
   dependencies:
     "@babel/parser" "7.14.4"
     "@babel/plugin-transform-typescript" "7.14.6"
@@ -2690,38 +2690,38 @@
     prettier "2.3.0"
     toml "3.0.0"
 
-"@redwoodjs/prerender@^0.35.0-rc.56+f9742c78e":
-  version "0.35.0-rc.56"
-  resolved "https://registry.yarnpkg.com/@redwoodjs/prerender/-/prerender-0.35.0-rc.56.tgz#7c89199ec65f0e9d5c421a9b8f99e303ff66607f"
-  integrity sha512-GbTlLZdEiNl1RBg7rRHAkCF1NNaLlBX+AJlYUcAOSXwJGxb1LAOYFk/+MrR3QnA/fo7AZ/Nl/e6o2HIsuYXwCg==
+"@redwoodjs/prerender@0.35.0":
+  version "0.35.0"
+  resolved "https://registry.yarnpkg.com/@redwoodjs/prerender/-/prerender-0.35.0.tgz#7c787e66c8af4561351fdff6e01f4e330ea5986f"
+  integrity sha512-DmeZZURsNmSAT6H6s4xw5pfkyUKQ+X4XVYW7OrJCt0xWJCWXwBgUHCmGS7EbeLH/TznF8UWnOfX0q4cwVN1crQ==
   dependencies:
     "@babel/register" "7.13.16"
-    "@redwoodjs/auth" "^0.35.0-rc.56+f9742c78e"
-    "@redwoodjs/internal" "^0.35.0-rc.56+f9742c78e"
-    "@redwoodjs/router" "^0.35.0-rc.56+f9742c78e"
-    "@redwoodjs/structure" "^0.35.0-rc.56+f9742c78e"
-    "@redwoodjs/web" "^0.35.0-rc.56+f9742c78e"
+    "@redwoodjs/auth" "0.35.0"
+    "@redwoodjs/internal" "0.35.0"
+    "@redwoodjs/router" "0.35.0"
+    "@redwoodjs/structure" "0.35.0"
+    "@redwoodjs/web" "0.35.0"
     babel-plugin-ignore-html-and-css-imports "0.1.0"
     cheerio "1.0.0-rc.10"
     node-fetch "2.6.1"
 
-"@redwoodjs/router@0.35.0-rc.56", "@redwoodjs/router@^0.35.0-rc.56+f9742c78e":
-  version "0.35.0-rc.56"
-  resolved "https://registry.yarnpkg.com/@redwoodjs/router/-/router-0.35.0-rc.56.tgz#e9e7a6c13add3106c3c275b020e32ada9f35397b"
-  integrity sha512-6VIV3PXgu8aAe8FTpl5f/hv2+kdfAyk9BOZ8MJHZZ1v/1h4iSzN7NhIt4y4kuf61koqgQlWpnzm7gQwFFXEvwg==
+"@redwoodjs/router@0.35.0", "@redwoodjs/router@^0.35.0":
+  version "0.35.0"
+  resolved "https://registry.yarnpkg.com/@redwoodjs/router/-/router-0.35.0.tgz#c44402bef4f5f12b48620080ca1f8149e0405221"
+  integrity sha512-Hw9Hs/xS7Kl+qqxee4Id9cp9p4TaXZwjp4WCbaIvuuuU+Qpla0yDT/xyNMqXb+ePddEgY7bfoXvvk1v/s1BOWQ==
   dependencies:
     "@reach/skip-nav" "0.15.2"
-    "@redwoodjs/auth" "^0.35.0-rc.56+f9742c78e"
+    "@redwoodjs/auth" "0.35.0"
     core-js "3.15.2"
     lodash.isequal "4.5.0"
 
-"@redwoodjs/structure@^0.35.0-rc.56+f9742c78e":
-  version "0.35.0-rc.56"
-  resolved "https://registry.yarnpkg.com/@redwoodjs/structure/-/structure-0.35.0-rc.56.tgz#76c7d7978d57012d855549fafb8fe616f4d148ea"
-  integrity sha512-uZi3aFtWJ0W0CGsQKxRYXCprwziKOSJkM/gEbjtWw3oIMMJyU3RBlzAVotQMLG2U8+ysXqICgCCR8hhwjqBUDg==
+"@redwoodjs/structure@0.35.0":
+  version "0.35.0"
+  resolved "https://registry.yarnpkg.com/@redwoodjs/structure/-/structure-0.35.0.tgz#487b4323ac15a5c1f3c6f945374c935c565f8fda"
+  integrity sha512-C/gA2pB4ZbMJ3RsCRLlYJNkoUTy9ZVSJ7un5/Li1RloSqfoDS0DpbXqwGLvsf5+XWSxhgrP35Fii11bK6FL83A==
   dependencies:
     "@prisma/sdk" "2.26.0"
-    "@redwoodjs/internal" "^0.35.0-rc.56+f9742c78e"
+    "@redwoodjs/internal" "0.35.0"
     "@types/line-column" "1.0.0"
     camelcase "6.0.0"
     deepmerge "4.2.2"
@@ -2742,15 +2742,15 @@
     vscode-languageserver-types "3.15.1"
     yargs-parser "20.2.9"
 
-"@redwoodjs/testing@^0.35.0-rc.56+f9742c78e":
-  version "0.35.0-rc.56"
-  resolved "https://registry.yarnpkg.com/@redwoodjs/testing/-/testing-0.35.0-rc.56.tgz#9fb0cd914814abf2270d7477b94ed1cb1a45539a"
-  integrity sha512-+4JHeJW1Rz6U9cPGsHVZlPTXyQnqNd1TU8NprVMP3UEnhweJ6LO9obtuQGAx+vhM6UneUvLLDLxx5XnnIc829g==
+"@redwoodjs/testing@0.35.0":
+  version "0.35.0"
+  resolved "https://registry.yarnpkg.com/@redwoodjs/testing/-/testing-0.35.0.tgz#52e81a2be4e47c8a1fe41d4944ff9334af97b5fa"
+  integrity sha512-Dqu+57GBlIzLahUN3jglysGEPUEv+J7EkH4raw47ShKpHkdUzZ/tfAa5mIhTyZGlKJcQupYNyCNgLV/xLLEvmw==
   dependencies:
-    "@redwoodjs/auth" "^0.35.0-rc.56+f9742c78e"
-    "@redwoodjs/internal" "^0.35.0-rc.56+f9742c78e"
-    "@redwoodjs/router" "^0.35.0-rc.56+f9742c78e"
-    "@redwoodjs/web" "^0.35.0-rc.56+f9742c78e"
+    "@redwoodjs/auth" "0.35.0"
+    "@redwoodjs/internal" "0.35.0"
+    "@redwoodjs/router" "0.35.0"
+    "@redwoodjs/web" "0.35.0"
     "@storybook/addon-a11y" "6.3.2"
     "@storybook/react" "6.3.2"
     "@testing-library/jest-dom" "5.11.10"
@@ -2770,13 +2770,13 @@
     whatwg-fetch "3.6.2"
     x----x----x "^0 Types"
 
-"@redwoodjs/web@0.35.0-rc.56", "@redwoodjs/web@^0.35.0-rc.56+f9742c78e":
-  version "0.35.0-rc.56"
-  resolved "https://registry.yarnpkg.com/@redwoodjs/web/-/web-0.35.0-rc.56.tgz#f6fefa9054ca5e50aca87237bf58689f57db9a94"
-  integrity sha512-ONz/OEuLdsVq7tfJPCofZX/a30yxwIaYJD0/elV1N/PmI4lXcHuaLxiqSkFd2Nvq/Q4DpBPD92pZLgk03xq+aA==
+"@redwoodjs/web@0.35.0", "@redwoodjs/web@^0.35.0":
+  version "0.35.0"
+  resolved "https://registry.yarnpkg.com/@redwoodjs/web/-/web-0.35.0.tgz#d5f08eaba80002a417b120d1eeb7faf71fd2692e"
+  integrity sha512-ZMzmEGBkyP5lJa0YE2Xpk4o3m1yCjprCEUerKpVuV5kveiCwa3CZCESlE8+0oyDCxEJJdIAxrTtI1SzdU1f0OQ==
   dependencies:
     "@apollo/client" "3.3.19"
-    "@redwoodjs/auth" "^0.35.0-rc.56+f9742c78e"
+    "@redwoodjs/auth" "0.35.0"
     core-js "3.15.2"
     graphql "15.5.1"
     proptypes "1.1.0"
