@@ -1,6 +1,7 @@
 [web]
   port = 8910
   apiProxyPath = "/.redwood/functions"
+  title = "Redwood Tutorial Test"
 [api]
   port = 8911
 [browser]
