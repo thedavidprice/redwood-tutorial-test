@@ -2,10 +2,14 @@
 Final state of Tutorial code running on latest release version. This is where the testing happens.
 
 ### Deployed on Netlify
-TODO
+https://redwoodjs-tutorial-test.netlify.app
 
 ### Deployed on Vercel
 https://redwood-tutorial-test.vercel.app/
+
+### Deployed on Render
+- Postgres: https://tdp-redwood-tutorial-test-web-r3h6.onrender.com
+- SQLite: https://tdp-redwood-tutorial-test-web.onrender.com
 
 ## Getting Started
 - [Tutorial](https://redwoodjs.com/tutorial/welcome-to-redwood): getting started and complete overview guide.
