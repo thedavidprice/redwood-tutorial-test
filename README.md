@@ -1,17 +1,17 @@
 # Redwood Tutorial Testing Repo
-Final state of Tutorial code running on latest release version.
-
-This is where the testing happens.
+Final state of Tutorial code running on latest release version. This is where the testing happens.
 
 ### Deployed on Netlify
-https://jovial-bohr-4ac134.netlify.com/
+https://redwoodjs-tutorial-test.netlify.app
 
 ### Deployed on Vercel
-TODO
+https://redwood-tutorial-test.vercel.app/
 
+### Deployed on Render
+- Postgres: https://tdp-redwood-tutorial-test-web-r3h6.onrender.com
+- SQLite: https://tdp-redwood-tutorial-test-web.onrender.com
 
 ## Getting Started
-- [Redwoodjs.com](https://redwoodjs.com): home to all things RedwoodJS.
 - [Tutorial](https://redwoodjs.com/tutorial/welcome-to-redwood): getting started and complete overview guide.
 - [Docs](https://redwoodjs.com/docs/introduction): using the Redwood Router, handling assets and files, list of command-line tools, and more.
 - [Redwood Community](https://community.redwoodjs.com): get help, share tips and tricks, and collaborate on everything about RedwoodJS.
@@ -27,10 +27,10 @@ yarn install
 ### Fire it up
 
 ```terminal
-yarn redwood dev
+yarn rw dev
 ```
 
-Your browser should open automatically to `http://localhost:8910` to see the web app. Lambda functions run on `http://localhost:8911` and are also proxied to `http://localhost:8910/api/functions/*`.
+Your browser should open automatically to `http://localhost:8910` to see the web app. Lambda functions run on `http://localhost:8911` and are also proxied to `http://localhost:8910/.netlify/functions/*`.
 
 ## Development
 
@@ -38,14 +38,14 @@ Your browser should open automatically to `http://localhost:8910` to see the web
 
 We're using [Prisma2](https://github.com/prisma/prisma2), a modern DB toolkit to query, migrate and model your database.
 
-Prisma2 is [not ready for production](https://isprisma2ready.com) at the moment.
+To create a development database, you will need to create a `.env` file and include a PostgreSQL environment variable like the `DATABASE_URL` specified in `.env.defaults`, see either:
+* [This link](https://community.redwoodjs.com/t/setup-database-with-railway-cli/2025) for instructions on quickly setting up a database on Railway.
+* [This link](https://redwoodjs.com/docs/local-postgres-setup.html) for setting up PostgreSQL locally.
 
-To create a development database:
+After doing that, run the following command:
 
 ```terminal
-yarn redwood db up
+yarn rw prisma migrate dev
 ```
 
-This will read the schema definition in `api/prisma/schema.prisma` and generate a sqlite database in `api/prisma/dev.db`
-
-If you've made changes to the schema run `yarn redwood db save` to generate a migration, and `yarn redwood db up` to apply the migration/ generate a new ORM client.
+This will read the schema definition in `api/db/schema.prisma`.
