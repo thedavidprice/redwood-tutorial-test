@@ -1,6 +1,6 @@
 export const standard = defineScenario({
   post: {
-    one: { title: 'String', body: 'String' },
-    two: { title: 'String', body: 'String' },
+    one: { data: { title: 'String', body: 'String' } },
+    two: { data: { title: 'String', body: 'String' } },
   },
 })
