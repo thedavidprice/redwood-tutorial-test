@@ -5,7 +5,7 @@
 //     return await db.user.findUnique({ where: { email } })
 //   }
 
-import { AuthenticationError } from '@redwoodjs/api'
+import { AuthenticationError } from '@redwoodjs/graphql-server'
 
 export const getCurrentUser = async (jwt) => {
   return jwt
