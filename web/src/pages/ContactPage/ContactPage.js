@@ -39,7 +39,7 @@ const ContactPage = () => {
       <Toaster />
       <Form
         onSubmit={onSubmit}
-        validation={{ mode: 'onBlur' }}
+        config={{ mode: 'onBlur' }}
         error={error}
         formMethods={formMethods}
       >
