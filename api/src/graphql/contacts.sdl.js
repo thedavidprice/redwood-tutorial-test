@@ -8,7 +8,7 @@ export const schema = gql`
   }
 
   type Query {
-    contacts: [Contact!]! @skipAuth
+    contacts: [Contact!]! @requireAuth
   }
 
   input CreateContactInput {
