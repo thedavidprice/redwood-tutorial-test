@@ -8,9 +8,7 @@
     ]
   },
   "devDependencies": {
-    "@redwoodjs/core": "^0.37.3",
-    "webpack": "^5.57.1",
-    "webpack-dev-server": "^4.3.1"
+    "@redwoodjs/core": "^0.37.3"
   },
   "eslintConfig": {
     "extends": "@redwoodjs/eslint-config",
