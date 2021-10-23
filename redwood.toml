@@ -1,6 +1,6 @@
 [web]
   port = 8910
-  apiProxyPath = "/api"
+  apiUrl = "/api"
   title = "Redwood Tutorial Test"
 [api]
   port = 8911
