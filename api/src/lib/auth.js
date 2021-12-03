@@ -1,21 +1,25 @@
-// Define what you want `currentUser` to return throughout your app. For example,
-// to return a real user from your database, you could do something like:
-//
-//   export const currentuser = async ({ email }) => {
-//     return await db.user.findUnique({ where: { email } })
-//   }
-
-import { AuthenticationError } from '@redwoodjs/graphql-server'
-
-export const getCurrentUser = async (jwt) => {
-  return jwt
+/**
+ * Once you are ready to add authentication to your application
+ * you'll build out requireAuth() with real functionality. For
+ * now we just return `true` so that the calls in services
+ * have something to check against, simulating a logged
+ * in user that is allowed to access that service.
+ *
+ * See https://redwoodjs.com/docs/authentication for more info.
+ */
+export const isAuthenticated = () => {
+  return true
 }
 
-// Use this function in your services to check that a user is logged in, and
-// optionally raise an error if they're not.
+export const hasRole = ({ roles }) => {
+  return roles !== undefined
+}
 
-export const requireAuth = () => {
-  if (!context.currentUser) {
-    throw new AuthenticationError()
-  }
+// This is used by the redwood directive
+// in ./api/src/directives/requireAuth
+
+// Roles are passed in by the requireAuth directive if you have auth setup
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+export const requireAuth = ({ roles }) => {
+  return isAuthenticated()
 }

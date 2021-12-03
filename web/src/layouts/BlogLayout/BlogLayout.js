@@ -18,11 +18,11 @@ const BlogLayout = ({ children }) => {
             <li>
               <Link to={routes.contact()}>Contact</Link>
             </li>
-            <li>
+            {/* <li>
               <a href="#" onClick={isAuthenticated ? logOut : logIn}>
                 {isAuthenticated ? 'Log Out' : 'Log In'}
               </a>
-            </li>
+            </li> */}
             {isAuthenticated && <li>{currentUser.email}</li>}
           </ul>
         </nav>

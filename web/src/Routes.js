@@ -7,7 +7,7 @@
 // 'src/pages/HomePage/HomePage.js'         -> HomePage
 // 'src/pages/Admin/BooksPage/BooksPage.js' -> AdminBooksPage
 
-import { Router, Route, Private, Set } from '@redwoodjs/router'
+import { Router, Route, Set } from '@redwoodjs/router'
 import PostsLayout from 'src/layouts/PostsLayout'
 import BlogLayout from 'src/layouts/BlogLayout'
 
@@ -20,14 +20,16 @@ const Routes = () => {
         <Route path="/about" page={AboutPage} name="about" prerender />
         <Route path="/" page={HomePage} name="home" prerender />
       </Set>
-      <Private unauthenticated="home">
-        <Set wrap={PostsLayout}>
-          <Route path="/admin/posts/new" page={PostNewPostPage} name="newPost" />
-          <Route path="/admin/posts/{id:Int}/edit" page={PostEditPostPage} name="editPost" />
-          <Route path="/admin/posts/{id:Int}" page={PostPostPage} name="post" />
-          <Route path="/admin/posts" page={PostPostsPage} name="posts" />
-        </Set>
-      </Private>
+      <Set wrap={PostsLayout}>
+        <Route path="/admin/posts/new" page={PostNewPostPage} name="newPost" />
+        <Route
+          path="/admin/posts/{id:Int}/edit"
+          page={PostEditPostPage}
+          name="editPost"
+        />
+        <Route path="/admin/posts/{id:Int}" page={PostPostPage} name="post" />
+        <Route path="/admin/posts" page={PostPostsPage} name="posts" />
+      </Set>
       <Route notfound page={NotFoundPage} prerender />
     </Router>
   )
