@@ -4,7 +4,6 @@ about: Project Status over the Holidays
 title: ''
 labels: ''
 assignees: ''
-
 ---
 
 Happy Holidays!🎄🎉 
