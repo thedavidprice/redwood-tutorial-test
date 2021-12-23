@@ -1,11 +1,3 @@
----
-name: Holiday PR template
-about: Project Status over the Holidays
-title: ''
-labels: ''
-assignees: ''
----
-
 Happy Holidays!🎄🎉 
 
 Redwood project activity will be slow until Monday, January 3rd. Read the following "Redwood Holiday Updates" to learn more:
