@@ -7,7 +7,7 @@ jobs:
   create-dir-env:
     steps:
       - name: Create a RedwoodJS app
-        run: ./create-dir
+        run: ../create-dir
       - name: Check Env Vars REDWOOD_PROJECT_PATH and REDWOOD_FRAMEWORK_PATH
         run: |
           echo "$REDWOOD_PROJECT_PATH"
