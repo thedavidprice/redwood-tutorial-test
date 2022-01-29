@@ -5,6 +5,7 @@ on:
     types: [opened, labeled, unlabeled, synchronize, reopened]
 jobs:
   create-dir-env:
+    runs-on: 'ubuntu-latest'
     steps:
       - name: Create a RedwoodJS app
         run: ../create-dir
