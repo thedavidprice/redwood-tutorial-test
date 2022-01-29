@@ -1,8 +1,5 @@
-#!/usr/bin/env node
-/* eslint-env node, es6*/
-
-const os = require('os')
-const path = require('path')
+import os from 'os'
+import path from 'path'
 
 import execa from 'execa'
 import fs from 'fs-extra'

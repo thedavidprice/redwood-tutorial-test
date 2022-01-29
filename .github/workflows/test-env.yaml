@@ -28,8 +28,8 @@ jobs:
         run: yarn install
       - name: Create a RedwoodJS app
         run: |
-          chmod +x ./create-dir
-          ./create-dir
+          chmod +x ./create-dir.js
+          ./create-dir.js
       - name: Check Env Vars REDWOOD_PROJECT_PATH and REDWOOD_FRAMEWORK_PATH
         run: |
           echo "$REDWOOD_PROJECT_PATH"
