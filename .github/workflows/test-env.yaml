@@ -1,4 +1,4 @@
-name: Require PR label "release:*"
+name: Create Dir
 
 on:
   pull_request:
@@ -7,6 +7,8 @@ jobs:
   create-dir-env:
     runs-on: 'ubuntu-latest'
     steps:
+      - name: Checkout
+        uses: actions/checkout@v2
       - name: Create a RedwoodJS app
         run: .github/create-dir
       - name: Check Env Vars REDWOOD_PROJECT_PATH and REDWOOD_FRAMEWORK_PATH
