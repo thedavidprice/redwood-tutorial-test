@@ -1,10 +1,11 @@
-import os from 'os'
-import path from 'path'
+/* eslint-env node, es6*/
 
-import execa from 'execa'
-import fs from 'fs-extra'
+const os = require('os')
+const path = require('path')
 
-const __dirname = process.cwd()
+const execa = require('execa')
+const fs = require('fs-extra')
+
 const REDWOOD_FRAMEWORK_PATH = path.resolve(__dirname, '..')
 const REDWOOD_PROJECT_PATH = path.join(
   os.tmpdir(),
@@ -62,7 +63,7 @@ console.log('-'.repeat(80))
 console.log()
 console.log('RW Project Path: ' + REDWOOD_PROJECT_PATH)
 console.log('RW Framework Path: ' + REDWOOD_FRAMEWORK_PATH)
-// createProjectDir()
+createProjectDir()
 console.log('Creating GitHub Action Path Env Vars...')
 exportEnv()
 console.log('...Done. Exported Path Env Vars...')
