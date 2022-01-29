@@ -20,5 +20,9 @@
   },
   "prisma": {
     "seed": "yarn rw exec seed"
+  },
+  "dependencies": {
+    "execa": "^6.0.0",
+    "fs-extra": "^10.0.0"
   }
 }
