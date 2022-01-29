@@ -1,11 +1,10 @@
 #!/usr/bin/env node
-/* eslint-env node, es6*/
 
-const os = require('os')
-const path = require('path')
+import os from 'os'
+import path from 'path'
 
-const execa = require('execa')
-const fs = require('fs-extra')
+import execa from 'execa'
+import fs from 'fs-extra'
 
 const REDWOOD_FRAMEWORK_PATH = path.resolve(__dirname, '..')
 const REDWOOD_PROJECT_PATH = path.join(
