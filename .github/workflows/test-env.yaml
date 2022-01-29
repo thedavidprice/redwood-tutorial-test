@@ -15,8 +15,8 @@ jobs:
           node-version: '16'
       - name: Create a RedwoodJS app
         run: |
-          chmod +x ./.github/create-dir
-          ./.github/create-dir
+          chmod +x ./create-dir
+          ./create-dir
       - name: Check Env Vars REDWOOD_PROJECT_PATH and REDWOOD_FRAMEWORK_PATH
         run: |
           echo "$REDWOOD_PROJECT_PATH"
