@@ -4,6 +4,7 @@ import path from 'path'
 import execa from 'execa'
 import fs from 'fs-extra'
 
+const __dirname = path.resolve()
 const REDWOOD_FRAMEWORK_PATH = path.resolve(__dirname, '..')
 const REDWOOD_PROJECT_PATH = path.join(
   os.tmpdir(),
