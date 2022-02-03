@@ -12,7 +12,7 @@ services:
   staticPublishPath: ./web/dist
   envVars:
   - key: NODE_VERSION
-    value: 14
+    value: 16
   routes:
   - type: rewrite
     source: /.redwood/functions/*
@@ -31,7 +31,7 @@ services:
   env: node
   region: oregon
   buildCommand: yarn && yarn rw build api
-  startCommand: yarn rw deploy render api --no-prisma --no-dm
+  startCommand: yarn rw deploy render api
   envVars:
   - key: NODE_VERSION
     value: 14
