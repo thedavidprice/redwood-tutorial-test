@@ -12,7 +12,7 @@ services:
   staticPublishPath: ./web/dist
   envVars:
   - key: NODE_VERSION
-    value: 14
+    value: 16
   routes:
   - type: rewrite
     source: /.redwood/functions/*
