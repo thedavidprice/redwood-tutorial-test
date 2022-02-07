@@ -21,7 +21,7 @@ services:
 # example:
 #   destination: https://myredwoodproject-api.onrender.com/*
 #####
-    destination: https://tdp-redwood-tutorial-test-api.onrender.com/*
+    destination: replace_with_api_url/*
   - type: rewrite
     source: /*
     destination: /index.html
@@ -33,10 +33,8 @@ services:
   buildCommand: yarn && yarn rw build api
   startCommand: yarn rw deploy render api
   envVars:
-  - key: REDWOOD_DISABLE_TELEMETRY
-    value: 1
   - key: NODE_VERSION
-    value: 14
+    value: 16
   - key: DATABASE_URL
     value: file:./data/sqlite.db
   disk:
