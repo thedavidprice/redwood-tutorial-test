@@ -33,6 +33,8 @@ services:
   buildCommand: yarn && yarn rw build api
   startCommand: yarn rw deploy render api
   envVars:
+  - key: REDWOOD_DISABLE_TELEMETRY
+    value: 1
   - key: NODE_VERSION
     value: 14
   - key: DATABASE_URL
